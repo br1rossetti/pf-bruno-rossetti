@@ -1,0 +1,408 @@
+
+* {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/* ESTILOS DEL BODY SOBRE MI*/
+
+#bodySobreMi {
+    height: 110vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 0.5fr 5fr 0.5fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    column-gap: 20px;
+}
+
+
+/* ESTILOS DEL BODY HABILIDADES*/
+
+#bodyHabilidades {
+
+    height: 110vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 5fr 0.5fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    column-gap: 20px;
+}
+
+/* ESTILOS DEL BODY CONTACTO*/
+
+#bodyContacto {
+
+    height: 110vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 5fr 0.5fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    column-gap: 20px;
+}
+
+/* ESTILOS DEL HEADER GENERAL*/
+
+header {
+    background-color: #011F26;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "headerLogo headerNav headerIconos";
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo {
+    grid-area: headerLogo;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerNav {
+    grid-area: headerNav;
+    list-style-type: none;
+}
+
+.headerIconos {
+    height: 100%;
+    width: 100%;
+    grid-area: headerIconos;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header div ul li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    margin: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #EECE1A;
+}
+
+
+/* ESTILOS DEL MAIN SOBRE MI*/
+
+.mainSobreMi {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "sectionFotografia sectionTexto";
+}
+
+.sectionFotografia {
+    grid-area: sectionFotografia;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenFotografia {
+    width: cover;
+    height: cover;
+}
+
+.sectionTexto {
+    grid-area: sectionTexto;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.botonesSobreMi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnVerProyectos {
+    height: 50px;
+    width: 250px;
+    background-color: #EECE1A;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btnVerLinkedIn {
+    height: 50px;
+    width: 250px;
+    background-color: none;
+    color: black;
+    border-radius: 5px;
+    border: solid black 2px;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+
+/* ESTILOS DEL MAIN HABILIDADES*/
+
+.mainHabilidades {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "secTituloHabilidades"
+    "secCardsHabilidades";
+    column-gap: 20px;
+}
+
+.secTituloHabilidades {
+    grid-area: secTituloHabilidades;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.secCardsHabilidades {
+    margin-bottom: 2%;
+    grid-area: secCardsHabilidades;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.divHabilidades {
+
+    background-color: #E6E6E6;
+    border-radius: 5px;
+    height: 100%;
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: center;
+}
+
+.iconHabilidades {
+    height: 100px;
+}
+
+main ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+section div ul li {
+    font-size: 0.5rem;
+}
+
+.iconoHerramientas {
+    height: 60%;
+}
+
+
+/* ESTILOS DEL MAIN CONTACTO*/
+
+.mainContacto {
+    background-image: url(../assets/img/Banner-computadora-br1.JPG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "sectionUno sectionDos";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.sectionUno {
+    grid-area: sectionUno;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-around;
+    margin-left: 10vh;
+    color: white;
+}
+
+.sectionDos {
+    grid-area: sectionDos;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+    "tituloSectionDos"
+    "formSectionDos";
+}
+
+.tituloSectionDos {
+    grid-area: tituloSectionDos;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+
+}
+
+h2 {
+    color: #EECE1A;
+}
+
+.formSectionDos {
+    grid-area: formSectionDos;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+input, textarea{
+    outline: none;
+    border: 1;
+    padding: 5px;
+}
+
+input:focus {
+    border-color: #011F26;    
+}
+
+textarea:focus {
+    border-color: #011F26;    
+}
+
+.botonEnviar{
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    border: solid grey 0px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ESTILOS FOOTER GENERAL */
+ 
+footer {
+    background-color: #011F26;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "footerLogo footerDerechos footerWp";
+}
+
+.footerLogo {
+    grid-area: footerLogo;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footerDerechos {
+    grid-area: footerDerechos;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footerWp {
+    grid-area: footerWp;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* MEDIAS QUERIES */
+/* 
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 600px) {
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 320px) {
+} */
+
+
+
+
+
+
