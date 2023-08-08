@@ -9,6 +9,19 @@
 }
 
 
+#headerPrincipal {
+    background-color: rgb(10, 10, 10) !important;
+    height: 10vh;
+    display: flex;
+    top: 0;
+    position: fixed;
+    z-index: 1000000;
+    width: 100%;
+    padding-left: 2VW;
+  }
+
+
+
 /* ESTILOS DEL BODY SOBRE MI*/
 
 #bodySobreMi {
@@ -54,9 +67,28 @@
     column-gap: 20px;
 }
 
+/*ESTILOS HEADER BOOSTRAP */
+#ContItemsNav{
+    margin-left: 24% !important;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+#headerBoostrap{
+    background-color: #011F26 !important;
+   
+}
+#ContItemsNav li a{
+    color: white !important;
+    padding: 2 !important;
+    margin: 0 !important;
+}
+.logoBruno{
+    margin-left: 50px;
+}
 /* ESTILOS DEL HEADER GENERAL*/
 
-header {
+.headerGrid {
     background-color: #011F26;
     grid-area: header;
     display: grid;
@@ -101,12 +133,19 @@ header div ul {
 
 .headerIconos {
     height: 100%;
-    width: 100%;
+    margin-left: 13%;
     grid-area: headerIconos;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+.headerIconos ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 header nav ul li {

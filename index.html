@@ -14,57 +14,71 @@
 
 <body>
 <!-- HEADER -->
-    <header>
-        <div class="headerLogo">
-            <a href="./index.html">
-                <img src="./assets/icon/logo-br1.png" alt="Logo Bruno">
-            </a>
-        </div> 
-        <nav class="headerNav">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pagess/proyectos.html">Proyectos</a></li>
-                <li><a href="./pagess/sobre-mi.html">Sobre Mí</a></li>
-                <li><a href="./pagess/habilidades.html">Habilidades</a></li>
-                <li><a href="./pagess/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="headerIconos">
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/bruno-rossetti1/" target="_blank">
-                        <img src="./assets/icon/iconos-header/LinkedIn.png" alt="Icono de Linkedin">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/design_br1/" target="_blank">
-                        <img src="./assets/icon/iconos-header/Instagram.png" alt="Icono de Instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/br1diseno" target="_blank">
-                        <img src="./assets/icon/iconos-header/Facebook.png" alt="Icono de Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:bruno.rossetti10@gmail.com" target="_blank">
-                        <img src="./assets/icon/iconos-header/Google.png" alt="Icono de Google">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.behance.net/design_br1" target="_blank">
-                        <img src="./assets/icon/iconos-header/Behance.png" alt="Icono de Behance">
-                    </a>
-                </li>
-            </ul>
+<header>
+    <nav class="navbar navbar-expand-lg" id="headerBoostrap">
+        <div class="container-fluid">
+            <img src="../assets/icon/logo-br1.png" alt="BrunoLogo" class="logoBruno">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="ContItemsNav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pagess/proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pagess/sobre-mi.html">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pagess/habilidades.html">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pagess/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <div class="headerIconos">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/bruno-rossetti1/" target="_blank">
+                                <img src="../assets/icon/iconos-header/LinkedIn.png" alt="Icono de Linkedin">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/design_br1/" target="_blank">
+                                <img src="../assets/icon/iconos-header/Instagram.png" alt="Icono de Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/br1diseno" target="_blank">
+                                <img src="../assets/icon/iconos-header/Facebook.png" alt="Icono de Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:bruno.rossetti10@gmail.com" target="_blank">
+                                <img src="../assets/icon/iconos-header/Google.png" alt="Icono de Google">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/design_br1" target="_blank">
+                                <img src="../assets/icon/iconos-header/Behance.png" alt="Icono de Behance">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
         </div>
-    </header>
+    </nav>
+</header>
 <!-- MAIN -->
     <main>
 <!-- CARROUSEL  -->
         <div class="container-fluid">
             <div class="row">
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleInterval" class="carousel slide col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" data-bs-ride="carousel">
                     <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
                         <img src="./assets/img/slider/aktual-deco.jpg" class="d-block w-100" alt="Aktual Deco">
