@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 
 #headerPrincipal {
     background-color: rgb(10, 10, 10) !important;
