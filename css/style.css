@@ -72,6 +72,7 @@ body {
 }
 
 /*ESTILOS HEADER BOOSTRAP */
+
 #ContItemsNav{
     margin-left: 24% !important;
     display: flex;
@@ -240,9 +241,7 @@ p {
     border: solid black 2px;
     font-size: 1rem;
     font-weight: 500;
-
 }
-
 
 /* ESTILOS DEL MAIN HABILIDADES*/
 
@@ -393,7 +392,7 @@ textarea:focus {
 
 /* ESTILOS FOOTER GENERAL */
  
-footer {
+.footerGrid {
     background-color: #011F26;
     grid-area: footer;
     display: grid;
