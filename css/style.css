@@ -157,6 +157,13 @@ header div ul li {
     list-style-type: none;
 }
 
+.enlacesBotones {
+    margin: 0px !important;
+    background-color: black;
+    border-radius: 5px;
+    padding: 2px !important;
+}
+
 a {
     color: white !important;
     margin: 10px;
