@@ -12,18 +12,13 @@ body {
     overflow-x: hidden;
 }
 
-
-#headerPrincipal {
-    background-color: rgb(10, 10, 10) !important;
-    height: 10vh;
-    display: flex;
-    top: 0;
-    position: fixed;
-    z-index: 1000000;
-    width: 100%;
-    padding-left: 2VW;
+.headerRedesSociales {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
   }
-
 
 
 /* ESTILOS DEL BODY SOBRE MI*/
@@ -44,7 +39,6 @@ body {
 /* ESTILOS DEL BODY HABILIDADES*/
 
 #bodyHabilidades {
-
     height: 110vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -59,7 +53,6 @@ body {
 /* ESTILOS DEL BODY CONTACTO*/
 
 #bodyContacto {
-
     height: 110vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -79,10 +72,11 @@ body {
     justify-content: center;
     gap: 5px;
 }
-#headerBoostrap{
+
+.headerNavBoostrap {
     background-color: #011F26 !important;
-   
 }
+
 #ContItemsNav li a{
     color: white !important;
     padding: 2 !important;
@@ -113,21 +107,15 @@ body {
     top: 0;
 }
 
-nav {
+.nav {
     display: flex;
     flex-direction: row;
 }
 
-nav ul {
+.navUl {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-header div ul {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -153,7 +141,7 @@ header div ul {
     align-items: center;
     justify-content: space-around;
 }
-.headerIconos ul{
+.headerIconosUl {
   display: flex;
   list-style: none;
   margin: 0;
@@ -170,10 +158,11 @@ header div ul li {
 }
 
 a {
-    color: white;
+    color: white !important;
     margin: 10px;
+    padding: 0 !important;
     font-size: 1rem;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 a:hover {
@@ -212,6 +201,7 @@ a:hover {
 
 p {
     font-size: 1rem;
+    margin-bottom: 0 !important;
 }
 
 .botonesSobreMi {
@@ -273,7 +263,6 @@ p {
 }
 
 .divHabilidades {
-
     background-color: #E6E6E6;
     border-radius: 5px;
     height: 100%;
@@ -353,8 +342,13 @@ section div ul li {
 
 }
 
+h1 {
+    margin: 0 !important;
+}
+
 h2 {
     color: #EECE1A;
+    margin: 0 !important;
 }
 
 .formSectionDos {
@@ -388,6 +382,13 @@ textarea:focus {
     justify-content: center;
     align-items: center;
 
+}
+
+/* ESTILOS FOOTER CON BOOSTRAP */
+
+.footerBoostrap {
+    background-color: #011F26;
+    color: white
 }
 
 /* ESTILOS FOOTER GENERAL */
@@ -431,25 +432,6 @@ textarea:focus {
 }
 
 
-/* MEDIAS QUERIES */
-/* 
-@media (max-width: 1200px) {
-}
-
-@media (max-width: 1024px) {
-}
-
-@media (max-width: 768px) {
-}
-
-@media (max-width: 600px) {
-}
-
-@media (max-width: 480px) {
-}
-
-@media (max-width: 320px) {
-} */
 
 
 

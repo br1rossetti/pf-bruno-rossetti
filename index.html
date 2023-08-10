@@ -14,24 +14,28 @@
 
 <body>
 <!-- HEADER -->
-<header>
-    <!-- COMPONENTE NAVBAR -->
-    <nav class="navbar navbar-expand-lg position-sticky z-3" id="headerBoostrap">
-        <div class="container-fluid m-0 p-0">
-            <img src="./assets/icon/logo-br1.png" alt="BrunoLogo" class="logoBruno">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto" id="ContItemsNav">
+    <header>
+        <!-- COMPONENTE NAVBAR -->
+        <nav class="navbar navbar-expand-lg headerNavBoostrap">
+            <div class="container-fluid">
+                <!-- LOGO BR1 -->
+                <a class="navbar-brand col-3 m-0" href="./index.html"><img src="./assets/icon/logo-br1.png" alt="BrunoLogo">
+                </a>
+                    <!-- BOTON TOGGLER -->   
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- INCONITO TOGGLER -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-9" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto col-6">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./pagess/proyectos.html">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pagess/sobre-mi.html">Sobre Mí</a>
+                        <a class="nav-link" href="./pagess/sobre-mi.html">SobreMí</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./pagess/habilidades.html">Habilidades</a>
@@ -39,9 +43,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./pagess/contacto.html">Contacto</a>
                     </li>
-                </ul>
-                <div class="headerIconos">
-                    <ul>
+                    </ul>
+                    <ul class="headerRedesSociales col-3">
                         <li>
                             <a href="https://www.linkedin.com/in/bruno-rossetti1/" target="_blank">
                                 <img src="./assets/icon/iconos-header/LinkedIn.png" alt="Icono de Linkedin">
@@ -70,67 +73,68 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 <!-- MAIN -->
     <main>
-<!-- COMPONENTE CARROUSEL EN MAIN  -->
-        <div class="container-fluid m-0 p-0">
-            <div class="row">
-                <div id="carouselExampleInterval" class="carousel slide col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./assets/img/slider/aktual-deco.jpg" class="d-block w-100" alt="Aktual Deco">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./assets/img/slider/edificapp.jpg" class="d-block w-100" alt="EdificApp">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/img/slider/prevencion-salud.jpg" class="d-block w-100" alt="Prevencion Salud">
-                    </div>
-                    </div>
-                    <button class="carousel-control-prev w-75" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon w-75" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next w-75" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+<!-- COMPONENTE CARROUSEL EN MAIN  --> 
+    <div class="container-fluid">
+        <div class="row">
+            <div id="carouselExampleInterval" class="carousel slide col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 m-0 p-0" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./assets/img/slider/aktual-deco.jpg" class="d-block w-100" alt="Aktual Deco">
             </div>
-        </div>   
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./assets/img/slider/edificapp.jpg" class="d-block w-100" alt="EdificApp">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/slider/prevencion-salud.jpg" class="d-block w-100" alt="PrevencionSalud">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+    </div>
+    <br>
 <!-- PORTADA -->
-        <div class="container bg-primary">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column justify-content-center align-items-start bg-danger">
-                    <h1>Diseñador Ux Ui</h1>
-                    <h2>Hola, Soy Bruno Rossetti</h3>
-                    <p>Me especializado en diseño web, marketing y publicidad.</p>
-                    <a href="./pagess/contacto.html">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column justify-content-center align-items-start">
+                    <h1 class="mx-auto">Diseñador Ux Ui</h1>
+                    <h2 class="mx-auto">Hola, Soy Bruno Rossetti</h3>
+                    <p class="mx-auto">Me especializado en diseño web, marketing y publicidad.</p>
+                    <a href="./pagess/contacto.html" class="mx-auto">
                         <button class="btn btn-dark m-0" id="botonContactarme">Contactarme</button>
                     </a>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 bg-success">
-                    <img class="img-fluid w-100" src="./assets/img/bruno-portada.png" alt="Bruno Portada">
+                <br>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <img class="img-fluid h-lg-25 h-xl-100 " src="./assets/img/bruno-portada.png" alt="Bruno Portada">
                 </div>
             </div>
         </div>   
     </main>
 <!-- FOOTER -->
-    <footer>
+    <footer class="footerBoostrap">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 bg-warning">
-                    <a href="./index.html">
+                <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 justify-content-center align-items-center ">
+                    <a class="d-flex justify-content-center align-items-center" href="./index.html">
                         <img src="./assets/icon/logo-br1.png" alt="Logo Bruno">
                     </a>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-primary">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center align-items-center my-2">
                     <p>Todos los derechos reservados</p>
                 </div>
-                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 bg-danger">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-center align-items-center my-2">
                     <p>+54 3544 - 614226</p>
                 </div>
             </div>
