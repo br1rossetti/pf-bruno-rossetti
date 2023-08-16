@@ -12,15 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-.headerRedesSociales {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    margin-bottom: 0 !important;
-    padding: 0 !important;
-  }
-
-
 /* ESTILOS DEL BODY SOBRE MI*/
 
 #bodySobreMi {
@@ -66,22 +57,10 @@ body {
 
 /*ESTILOS HEADER BOOSTRAP */
 
-#ContItemsNav{
-    margin-left: 24% !important;
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-}
-
 .headerNavBoostrap {
-    background-color: #011F26 !important;
+    background-color: #011F26;
 }
 
-#ContItemsNav li a{
-    color: white !important;
-    padding: 2 !important;
-    margin: 0 !important;
-}
 .logoBruno{
     margin-left: 50px;
 }
@@ -157,19 +136,12 @@ header div ul li {
     list-style-type: none;
 }
 
-.enlacesBotones {
-    margin: 0px !important;
-    background-color: black;
-    border-radius: 5px;
-    padding: 2px !important;
-}
-
 a {
     color: white !important;
     margin: 10px;
-    padding: 0 !important;
+    padding: 0;
     font-size: 1rem;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 a:hover {
@@ -208,7 +180,11 @@ a:hover {
 
 p {
     font-size: 1rem;
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
+}
+
+.textosSobreMi {
+    margin-top: 20px;
 }
 
 .botonesSobreMi {
@@ -299,6 +275,10 @@ section div ul li {
     height: 60%;
 }
 
+.marginHerramientas {
+    margin-top: 20px;
+}
+
 
 /* ESTILOS DEL MAIN CONTACTO*/
 
@@ -350,12 +330,12 @@ section div ul li {
 }
 
 h1 {
-    margin: 0 !important;
+    margin: 0;
 }
 
 h2 {
     color: #EECE1A;
-    margin: 0 !important;
+    margin: 0;
 }
 
 .formSectionDos {
@@ -382,12 +362,13 @@ textarea:focus {
 
 .botonEnviar{
     display: flex;
-    background-color: white;
+    background-color: #EECE1A;
     border-radius: 5px;
-    border: solid grey 0px;
+    border: solid black 1px;
     width: 50%;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 
 }
 
