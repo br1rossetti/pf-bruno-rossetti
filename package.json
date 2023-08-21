@@ -1,0 +1,11 @@
+{
+  "name": "pre-entrega2-bruno-rossetti",
+  "version": "1.0.0",
+  "description": "2da pre entrega - Bruno Rossetti - Curso Desarrollo web Html y Css de Coderhouse\r Tecnologia usada Html - Css - Boostrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
