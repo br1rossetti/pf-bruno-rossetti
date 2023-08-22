@@ -25,6 +25,13 @@
   align-items: center;
   margin: 10px;
 }
+.headerGrid .headerLogo img {
+  animation-name: logoMove;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+}
 .headerGrid .headerNav {
   grid-area: headerNav;
   list-style-type: none;
@@ -88,6 +95,17 @@
   color: #EECE1A;
 }
 
+@keyframes logoMove {
+  0% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 /* ESTILOS DEL MAIN INDEX */
 main {
   display: grid;
@@ -369,7 +387,7 @@ main .divFotoPerfil img {
 
 /* ESTILOS MAIN CONTACTO */
 .mainContacto {
-  background-image: url(/assets/img/banner-computadora-br1.JPG);
+  background-image: url(/assets/img/banner-computadora-br1.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

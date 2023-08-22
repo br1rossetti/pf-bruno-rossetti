@@ -17,6 +17,13 @@
         justify-content: center;
         align-items: center;
         margin: 10px;
+        img {
+            animation-name: logoMove;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: 2s;
+            animation-delay: 0.5s;
+        }
     }
     .headerNav {
         grid-area: headerNav;
@@ -80,4 +87,10 @@
         }
     }
 }
+}
+
+@keyframes logoMove {
+    0% {width: 50%;}
+    50% {width: 75%;}
+    100% {width: 100%;}
 }
