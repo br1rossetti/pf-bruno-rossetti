@@ -134,6 +134,17 @@ main .sectionTitulo .pIndex {
 main .sectionTitulo .aIndex {
   font-size: 1rem;
 }
+main .sectionTitulo .aIndex .btnContactarme {
+  height: 50px;
+  width: 250px;
+  background-color: #EECE1A;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
 main .divFotoPerfil {
   grid-area: divFotoPerfil;
   display: flex;
@@ -147,102 +158,187 @@ main .divFotoPerfil img {
 }
 
 /* ESTILOS MAIN PROYECTOS */
-.cardsSuperiores {
+.mainProyectos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 5fr;
-  grid-template-areas: "misProyectos misProyectos misProyectos" "cardAktual cardClarisas cardEdificap";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2fr 2fr;
+  grid-template-areas: "divProyectos" "secCardsHabilidades" "secCardsInferiores";
 }
-.cardsSuperiores .misProyectos {
-  grid-area: misProyectos;
+.mainProyectos .divProyectos {
+  grid-area: divProyectos;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  margin-left: 5%;
 }
-.cardsSuperiores .misProyectos .h1MisProyectos {
-  background-color: red;
+.mainProyectos .divProyectos h1 {
+  text-decoration: none;
+}
+.mainProyectos .secCardsSuperiores {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+  margin: 20px;
 }
-.cardsSuperiores .cardAktual {
-  grid-area: cardAktual;
+.mainProyectos .secCardsSuperiores .cardAktual {
   height: 500px;
   width: 400px;
   border: 2px solid gray;
 }
-.cardsSuperiores .cardAktual .cardImage {
+.mainProyectos .secCardsSuperiores .cardAktual .cardImage {
   height: 50%;
   width: 100%;
   top: 0;
 }
-.cardsSuperiores .cardAktual .cardText .h2 {
+.mainProyectos .secCardsSuperiores .cardAktual .cardText .h2 {
   font-size: 2rem;
   color: #111112;
   padding-left: 10px;
 }
-.cardsSuperiores .cardAktual .cardText .p {
+.mainProyectos .secCardsSuperiores .cardAktual .cardText .p {
   font-size: 1rem;
   color: #111112;
   padding-left: 10px;
 }
-.cardsSuperiores .cardAktual .cardText .a {
+.mainProyectos .secCardsSuperiores .cardAktual .cardText .a {
   font-size: 1rem;
   list-style-type: none;
   padding-left: 10px;
   bottom: 0;
 }
-.cardsSuperiores .cardClarisas {
-  grid-area: cardClarisas;
+.mainProyectos .secCardsSuperiores .cardClarisas {
   height: 500px;
   width: 400px;
   border: 2px solid gray;
 }
-.cardsSuperiores .cardClarisas .cardImage {
+.mainProyectos .secCardsSuperiores .cardClarisas .cardImage {
   height: 50%;
   width: 100%;
   top: 0;
 }
-.cardsSuperiores .cardClarisas .cardText .h2 {
+.mainProyectos .secCardsSuperiores .cardClarisas .cardText .h2 {
   font-size: 2rem;
   color: #111112;
   padding-left: 10px;
 }
-.cardsSuperiores .cardClarisas .cardText .p {
+.mainProyectos .secCardsSuperiores .cardClarisas .cardText .p {
   font-size: 1rem;
   color: #111112;
   padding-left: 10px;
 }
-.cardsSuperiores .cardClarisas .cardText .a {
+.mainProyectos .secCardsSuperiores .cardClarisas .cardText .a {
   font-size: 1rem;
   list-style-type: none;
   padding-left: 10px;
   bottom: 0;
 }
-.cardsSuperiores .cardEdificap {
-  grid-area: cardEdificap;
+.mainProyectos .secCardsSuperiores .cardEdificap {
   height: 500px;
   width: 400px;
   border: 2px solid gray;
 }
-.cardsSuperiores .cardEdificap .cardImage {
+.mainProyectos .secCardsSuperiores .cardEdificap .cardImage {
   height: 50%;
   width: 100%;
   top: 0;
 }
-.cardsSuperiores .cardEdificap .cardText h2 {
+.mainProyectos .secCardsSuperiores .cardEdificap .cardText h2 {
   font-size: 2rem;
   color: #111112;
   padding-left: 10px;
 }
-.cardsSuperiores .cardEdificap .cardText p {
+.mainProyectos .secCardsSuperiores .cardEdificap .cardText p {
   font-size: 1rem;
   color: #111112;
   padding-left: 10px;
 }
-.cardsSuperiores .cardEdificap .cardText a {
+.mainProyectos .secCardsSuperiores .cardEdificap .cardText a {
+  font-size: 1rem;
+  list-style-type: none;
+  padding-left: 10px;
+  bottom: 0;
+}
+.mainProyectos .secCardsInferiores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+}
+.mainProyectos .secCardsInferiores .cardAktual {
+  height: 500px;
+  width: 400px;
+  border: 2px solid gray;
+}
+.mainProyectos .secCardsInferiores .cardAktual .cardImage {
+  height: 50%;
+  width: 100%;
+  top: 0;
+}
+.mainProyectos .secCardsInferiores .cardAktual .cardText .h2 {
+  font-size: 2rem;
+  color: #111112;
+  padding-left: 10px;
+}
+.mainProyectos .secCardsInferiores .cardAktual .cardText .p {
+  font-size: 1rem;
+  color: #111112;
+  padding-left: 10px;
+}
+.mainProyectos .secCardsInferiores .cardAktual .cardText .a {
+  font-size: 1rem;
+  list-style-type: none;
+  padding-left: 10px;
+  bottom: 0;
+}
+.mainProyectos .secCardsInferiores .cardClarisas {
+  height: 500px;
+  width: 400px;
+  border: 2px solid gray;
+}
+.mainProyectos .secCardsInferiores .cardClarisas .cardImage {
+  height: 50%;
+  width: 100%;
+  top: 0;
+}
+.mainProyectos .secCardsInferiores .cardClarisas .cardText .h2 {
+  font-size: 2rem;
+  color: #111112;
+  padding-left: 10px;
+}
+.mainProyectos .secCardsInferiores .cardClarisas .cardText .p {
+  font-size: 1rem;
+  color: #111112;
+  padding-left: 10px;
+}
+.mainProyectos .secCardsInferiores .cardClarisas .cardText .a {
+  font-size: 1rem;
+  list-style-type: none;
+  padding-left: 10px;
+  bottom: 0;
+}
+.mainProyectos .secCardsInferiores .cardEdificap {
+  height: 500px;
+  width: 400px;
+  border: 2px solid gray;
+}
+.mainProyectos .secCardsInferiores .cardEdificap .cardImage {
+  height: 50%;
+  width: 100%;
+  top: 0;
+}
+.mainProyectos .secCardsInferiores .cardEdificap .cardText h2 {
+  font-size: 2rem;
+  color: #111112;
+  padding-left: 10px;
+}
+.mainProyectos .secCardsInferiores .cardEdificap .cardText p {
+  font-size: 1rem;
+  color: #111112;
+  padding-left: 10px;
+}
+.mainProyectos .secCardsInferiores .cardEdificap .cardText a {
   font-size: 1rem;
   list-style-type: none;
   padding-left: 10px;

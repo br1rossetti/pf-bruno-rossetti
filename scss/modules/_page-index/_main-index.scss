@@ -24,6 +24,17 @@ main {
             }
             .aIndex{
                 font-size: $p;
+                .btnContactarme {
+                    height: 50px;
+                    width: 250px;
+                    background-color: $c-secundario;
+                    color: black;
+                    border-radius: 5px;
+                    border: none;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    margin-top: 10px;
+                }
             }
         }
     .divFotoPerfil{
