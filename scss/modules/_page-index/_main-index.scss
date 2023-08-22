@@ -1,0 +1,40 @@
+/* ESTILOS DEL MAIN INDEX */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "sectionTitulo divFotoPerfil";
+    .sectionTitulo{
+        grid-area: sectionTitulo;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+            .h1Index{
+                font-size: $h1;
+                color: $negro;  
+            }
+            .h2Index{
+                font-size: $h2;
+                color: $c-secundario;
+            }
+            .pIndex{
+                font-size: $p;
+            }
+            .aIndex{
+                font-size: $p;
+            }
+        }
+    .divFotoPerfil{
+        grid-area: divFotoPerfil;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+            img {
+                margin-top: 20px;
+            }
+        }    
+}

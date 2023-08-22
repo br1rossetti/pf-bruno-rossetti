@@ -1,0 +1,35 @@
+/* ESTILOS FOOTER */
+
+.footerGrid{
+    background-color: $c-principal;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "footerLogo footerDerechos footerWp";
+    .footerLogo  {
+        grid-area: footerLogo;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    .footerDerechos {
+        grid-area: footerDerechos;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerWp {
+        grid-area: footerWp;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}

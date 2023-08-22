@@ -1,2 +1,6 @@
-@import url(./modules/_variables.scss);
-@import url(./modules/_header.scss);
+@import "./modules/_variables.scss";
+@import "./modules/_reset.scss";
+@import "./modules/header";
+@import "./modules/_page-index/main-index";
+@import "./modules/_page-proyectos/main-proyectos";
+@import "./modules/footer";

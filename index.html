@@ -3,142 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre cómo el diseño UX/UI puede transformar la interacción digital.">
+    <meta name="keywords"  content="EXPERIENCIA DE USUARIO, USABILIDAD, DISEÑO, UX, UI, HTML, CSS">
     <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Pre-Entrega3 Bruno Rossetti</title>
+    <title>Diseñador UX/UI Bruno Rossetti</title>
 </head>
 
 <body>
 <!-- HEADER -->
-    <header>
-        <!-- COMPONENTE NAVBAR -->
-        <nav class="navbar navbar-expand-lg headerNavBoostrap bg-none">
-            <div class="container-fluid">
-                <!-- LOGO BR1 -->
-                <a class="navbar-brand col-3 m-0 text-decoration-none p-0" href="./index.html">
-                    <img src="./assets/icon/logo-br1.png" alt="BrunoLogo">
-                </a>
-                <!-- BOTON TOGGLER -->   
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- INCONITO TOGGLER -->
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse col-9" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto col-6">
-                        <li class="nav-item">
-                            <a class="nav-link active bs-body-bg text-decoration-none p-0" aria-current="page" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-decoration-none p-0" href="./pagess/proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-decoration-none p-0" href="./pagess/sobre-mi.html">SobreMí</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-decoration-none p-0" href="./pagess/habilidades.html">Habilidades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-decoration-none p-0" href="./pagess/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <ul class="headerRedesSociales col-3 d-flex align-items-center m-0 p-0">
-                        <li>
-                            <a href="https://www.linkedin.com/in/bruno-rossetti1/" target="_blank" class="text-decoration-none p-0">
-                                <img src="./assets/icon/iconos-header/LinkedIn.png" alt="Icono de Linkedin">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/design_br1/" target="_blank" class="text-decoration-none p-0">
-                                <img src="./assets/icon/iconos-header/Instagram.png" alt="Icono de Instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/br1diseno" target="_blank" class="text-decoration-none p-0">
-                                <img src="./assets/icon/iconos-header/Facebook.png" alt="Icono de Facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:bruno.rossetti10@gmail.com" target="_blank" class="text-decoration-none p-0">
-                                <img src="./assets/icon/iconos-header/Google.png" alt="Icono de Google">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.behance.net/design_br1" target="_blank" class="text-decoration-none p-0">
-                                <img src="./assets/icon/iconos-header/Behance.png" alt="Icono de Behance">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <header class="headerGrid">
+        <div class="headerLogo">
+            <a href="./index.html">
+                <img src="./assets/icon/logo-br1.png" alt="Logo Bruno">
+            </a>
+        </div> 
+        <nav class="headerNav">
+            <ul class="navUl">
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./pagess/proyectos.html">Proyectos</a>
+                </li>
+                <li>
+                    <a href="./pagess/sobre-mi.html">Sobre Mí</a>
+                </li>
+                <li>
+                    <a href="./pagess/habilidades.html">Habilidades</a>
+                </li>
+                <li>
+                    <a href="./pagess/contacto.html">Contacto</a>
+                </li>
+            </ul>
         </nav>
+        <div class="headerIconos">
+            <ul class="headerIconosUl">
+                <li>
+                    <a href="https://www.linkedin.com/in/bruno-rossetti1/" target="_blank">
+                        <img src="./assets/icon/iconos-header/linkedIn.png" alt="Icono de Linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/design_br1/" target="_blank">
+                        <img src="./assets/icon/iconos-header/Instagram.png" alt="Icono de Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/br1diseno" target="_blank">
+                        <img src="./assets/icon/iconos-header/Facebook.png" alt="Icono de Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:bruno.rossetti10@gmail.com" target="_blank">
+                        <img src="./assets/icon/iconos-header/Google.png" alt="Icono de Google">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/design_br1" target="_blank">
+                        <img src="./assets/icon/iconos-header/Behance.png" alt="Icono de Behance">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
 <!-- MAIN -->
     <main>
-        <!-- COMPONENTE CARROUSEL EN MAIN  --> 
-        <div class="container-fluid">
-            <div class="row">
-                <div id="carouselExampleInterval" class="carousel slide col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 m-0 p-0" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="./assets/img/slider/aktual-deco.jpg" class="d-block w-100" alt="Aktual Deco">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <img src="./assets/img/slider/edificapp.jpg" class="d-block w-100" alt="EdificApp">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/slider/prevencion-salud.jpg" class="d-block w-100" alt="PrevencionSalud">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
         <!-- PORTADA -->
-        <div class="container-fluid ">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex flex-column justify-content-center align-items-start">
-                    <h1 class="mx-auto">Diseñador Ux Ui</h1>
-                    <h2 class="mx-auto">Hola, Soy Bruno Rossetti</h2>
-                    <p class="mx-auto mb-0">Me especializo en diseño web, marketing y publicidad.</p>
-                    <a href="./pagess/contacto.html" class="mx-auto text-decoration-none p-0">
-                        <button class="btn btn-dark m-0" id="botonContactarme">Contactarme</button>
+                <section class="sectionTitulo">
+                    <h1 class="h1Index">Diseñador Ux Ui</h1>
+                    <h2 class="h2Index">Hola, Soy Bruno Rossetti</h2>
+                    <p class="pIndex">Me especializo en diseño web, marketing y publicidad.</p>
+                    <a class="aIndex" href="./pagess/contacto.html">
+                        <button>Contactarme</button>
                     </a>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-5">
-                    <img class="img-fluid h-lg-25 h-xl-100 " src="./assets/img/bruno-portada.png" alt="Bruno Portada">
-                </div>
-            </div>
-        </div>   
+                </section>
+                <div class="divFotoPerfil">
+                    <img src="./assets/img/bruno-portada.png" alt="Bruno Portada">
+                </div>  
     </main>
 <!-- FOOTER -->
-    <footer class="footerBoostrap">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6 col-md-3 col-lg-3 col-xl-3 justify-content-center align-items-center ">
-                    <a class="d-flex justify-content-center align-items-center text-decoration-none p-0" href="./index.html">
-                        <img src="./assets/icon/logo-br1.png" alt="Logo Bruno">
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center align-items-center my-2">
-                    <p class="mb-0">Todos los derechos reservados</p>
-                </div>
-                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex justify-content-center align-items-center my-2">
-                    <p class="mb-0">+54 3544 - 614226</p>
-                </div>
-            </div>
+    <footer class="footerGrid">
+        <div class="footerLogo">
+            <a href="../index.html">
+                <img src="../assets/icon/logo-br1.png" alt="Logo Bruno">
+            </a>
+        </div>
+        <div class="footerDerechos">
+            <p>Córdoba, Argentina. Todos los derechos reservados</p>
+        </div>
+        <div class="footerWp">
+            <p>+54 3544 - 614226</p>
         </div>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,115 @@
+/* ESTILOS MAIN PROYECTOS */
+
+.cardsSuperiores{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+    "misProyectos misProyectos misProyectos" 
+    "cardAktual cardClarisas cardEdificap";
+
+    .misProyectos {
+        grid-area: misProyectos;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .h1MisProyectos {
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .cardAktual {
+        grid-area: cardAktual;
+        height: 500px;
+        width: 400px;
+        border: 2px solid gray;
+        .cardImage {
+            height: 50%;
+            width: 100%;
+            top: 0;
+        }
+        .cardText {
+            .h2 {
+                font-size: $h2;
+                color: $negro;
+                padding-left: 10px;
+
+            }
+            .p {
+                font-size: $p;
+                color: $negro;
+                padding-left: 10px;
+            }
+            .a{
+                font-size: $p;
+                list-style-type: none;
+                padding-left: 10px;
+                bottom: 0;
+            }
+        }
+    }
+    .cardClarisas {
+        grid-area: cardClarisas;
+        height: 500px;
+        width: 400px;
+        border: 2px solid gray;
+        .cardImage {
+            height: 50%;
+            width: 100%;
+            top: 0;
+        }
+        .cardText {
+            .h2 {
+                font-size: $h2;
+                color: $negro;
+                padding-left: 10px;
+
+            }
+            .p {
+                font-size: $p;
+                color: $negro;
+                padding-left: 10px;
+            }
+            .a{
+                font-size: $p;
+                list-style-type: none;
+                padding-left: 10px;
+                bottom: 0;
+            }
+        }
+    }
+    .cardEdificap {
+        grid-area: cardEdificap;
+        height: 500px;
+        width: 400px;
+        border: 2px solid gray;
+        .cardImage {
+            height: 50%;
+            width: 100%;
+            top: 0;
+        }
+        .cardText {
+            h2 {
+                font-size: $h2;
+                color: $negro;
+                padding-left: 10px;
+
+            }
+            p {
+                font-size: $p;
+                color: $negro;
+                padding-left: 10px;
+            }
+            a{
+                font-size: $p;
+                list-style-type: none;
+                padding-left: 10px;
+                bottom: 0;
+            }
+        }
+    }
+}
