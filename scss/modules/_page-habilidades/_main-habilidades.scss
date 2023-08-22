@@ -1,0 +1,66 @@
+/* ESTILOS MAIN HABILIDADES */
+
+.mainHabilidades {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "secTituloHabilidades"
+    "secCardsHabilidades";
+    column-gap: 20px;
+    .secTituloHabilidades {
+        grid-area: secTituloHabilidades;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 5%;
+        h1 {
+            text-decoration: none;
+        }
+    }
+    .secCardsHabilidades {
+        margin-bottom: 2%;
+        grid-area: secCardsHabilidades;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        .divHabilidades {
+            background-color: $gris;
+            border-radius: 15px;
+            height: 100%;
+            width: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: initial;
+            align-items: center;
+            margin: 50px 0px 50px 0px;
+            .iconHabilidades {
+                height: 100px;
+            }
+            h2 {
+                text-decoration: none;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: left;
+                li {
+                    font-size: 0.8rem;
+                }
+            }
+            .marginHerramientas {
+                margin-top: 20px;
+            }
+            div {
+                text-decoration: none;
+                .iconoHerramientas {
+                    height: 60%;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+}

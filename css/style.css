@@ -231,6 +231,209 @@ main .divFotoPerfil img {
   bottom: 0;
 }
 
+/* ESTILOS MAIN SOBRE MI */
+.mainSobreMi {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "sectionFotografia sectionTexto";
+}
+.mainSobreMi .sectionFotografia {
+  grid-area: sectionFotografia;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainSobreMi .sectionFotografia img .imagenFotografia {
+  width: cover;
+  height: cover;
+}
+.mainSobreMi .sectionTexto {
+  grid-area: sectionTexto;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+.mainSobreMi .sectionTexto div {
+  text-decoration: none;
+}
+.mainSobreMi .sectionTexto div h1 .textosSobreMi {
+  font-size: 1rem;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.mainSobreMi .sectionTexto div {
+  text-decoration: none;
+}
+.mainSobreMi .sectionTexto div .textosSobreMi {
+  font-size: 1rem;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.mainSobreMi .sectionTexto div .botonesSobreMi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+.mainSobreMi .sectionTexto div .botonesSobreMi a {
+  text-decoration: none;
+}
+.mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerProyectos {
+  height: 50px;
+  width: 250px;
+  background-color: #EECE1A;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.mainSobreMi .sectionTexto div .botonesSobreMi a {
+  text-decoration: none;
+}
+.mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerLinkedIn {
+  height: 50px;
+  width: 250px;
+  background-color: none;
+  color: black;
+  border-radius: 5px;
+  border: solid black 2px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ESTILOS MAIN HABILIDADES */
+.mainHabilidades {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: "secTituloHabilidades" "secCardsHabilidades";
+  column-gap: 20px;
+}
+.mainHabilidades .secTituloHabilidades {
+  grid-area: secTituloHabilidades;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 5%;
+}
+.mainHabilidades .secTituloHabilidades h1 {
+  text-decoration: none;
+}
+.mainHabilidades .secCardsHabilidades {
+  margin-bottom: 2%;
+  grid-area: secCardsHabilidades;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mainHabilidades .secCardsHabilidades .divHabilidades {
+  background-color: #E6E6E6;
+  border-radius: 15px;
+  height: 100%;
+  width: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: center;
+  margin: 50px 0px 50px 0px;
+}
+.mainHabilidades .secCardsHabilidades .divHabilidades .iconHabilidades {
+  height: 100px;
+}
+.mainHabilidades .secCardsHabilidades .divHabilidades h2 {
+  text-decoration: none;
+}
+.mainHabilidades .secCardsHabilidades .divHabilidades ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.mainHabilidades .secCardsHabilidades .divHabilidades ul li {
+  font-size: 0.8rem;
+}
+.mainHabilidades .secCardsHabilidades .divHabilidades .marginHerramientas {
+  margin-top: 20px;
+}
+.mainHabilidades .secCardsHabilidades .divHabilidades div {
+  text-decoration: none;
+}
+.mainHabilidades .secCardsHabilidades .divHabilidades div .iconoHerramientas {
+  height: 60%;
+  margin-top: 10px;
+}
+
+/* ESTILOS MAIN CONTACTO */
+.mainContacto {
+  background-image: url(/assets/img/banner-computadora-br1.JPG);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "sectionUno sectionDos";
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.mainContacto .sectionUno {
+  grid-area: sectionUno;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-around;
+  margin-left: 10vh;
+  color: white;
+}
+.mainContacto .sectionDos {
+  grid-area: sectionDos;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas: "tituloSectionDos" "formSectionDos";
+}
+.mainContacto .sectionDos .tituloSectionDos {
+  grid-area: tituloSectionDos;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+}
+.mainContacto .sectionDos .formSectionDos {
+  grid-area: formSectionDos;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 1rem;
+}
+.mainContacto .sectionDos .formSectionDos input, .mainContacto .sectionDos .formSectionDos textarea {
+  outline: none;
+  border: 1;
+  padding: 5px;
+}
+.mainContacto .sectionDos .formSectionDos .botonEnviar {
+  display: flex;
+  background-color: #EECE1A;
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111112;
+}
+
 /* ESTILOS FOOTER */
 .footerGrid {
   background-color: #011F26;
