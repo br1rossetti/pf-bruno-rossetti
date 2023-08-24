@@ -19,28 +19,31 @@
             text-decoration: none;
         }
     }
-    .secCardsSuperiores{
+    .secCard{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-        margin: 20px;
-
+        padding-left: 1%;
+        padding-right: 1%;
+        
         .cardAktual {
             height: 500px;
-            width: 400px;
+            width: 33%;
             border: 2px solid gray;
+            margin: 1%;
+            position: relative;
             .cardImage {
                 height: 50%;
                 width: 100%;
                 top: 0;
+                object-fit: contain;
             }
             .cardText {
                 .h2 {
                     font-size: $h2;
                     color: $negro;
                     padding-left: 10px;
-    
                 }
                 .p {
                     font-size: $p;
@@ -48,159 +51,6 @@
                     padding-left: 10px;
                 }
                 .a{
-                    font-size: $p;
-                    list-style-type: none;
-                    padding-left: 10px;
-                    bottom: 0;
-                }
-            }
-        }
-        .cardClarisas {
-            height: 500px;
-            width: 400px;
-            border: 2px solid gray;
-            .cardImage {
-                height: 50%;
-                width: 100%;
-                top: 0;
-            }
-            .cardText {
-                .h2 {
-                    font-size: $h2;
-                    color: $negro;
-                    padding-left: 10px;
-    
-                }
-                .p {
-                    font-size: $p;
-                    color: $negro;
-                    padding-left: 10px;
-                }
-                .a{
-                    font-size: $p;
-                    list-style-type: none;
-                    padding-left: 10px;
-                    bottom: 0;
-                }
-            }
-        }
-        .cardEdificap {
-            height: 500px;
-            width: 400px;
-            border: 2px solid gray;
-            .cardImage {
-                height: 50%;
-                width: 100%;
-                top: 0;
-            }
-            .cardText {
-                h2 {
-                    font-size: $h2;
-                    color: $negro;
-                    padding-left: 10px;
-    
-                }
-                p {
-                    font-size: $p;
-                    color: $negro;
-                    padding-left: 10px;
-                }
-                a{
-                    font-size: $p;
-                    list-style-type: none;
-                    padding-left: 10px;
-                    bottom: 0;
-                }
-            }
-        }
-    }
-    .secCardsInferiores{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 20px;
-    
-        .cardAktual {
-            height: 500px;
-            width: 400px;
-            border: 2px solid gray;
-            .cardImage {
-                height: 50%;
-                width: 100%;
-                top: 0;
-            }
-            .cardText {
-                .h2 {
-                    font-size: $h2;
-                    color: $negro;
-                    padding-left: 10px;
-    
-                }
-                .p {
-                    font-size: $p;
-                    color: $negro;
-                    padding-left: 10px;
-                }
-                .a{
-                    font-size: $p;
-                    list-style-type: none;
-                    padding-left: 10px;
-                    bottom: 0;
-                }
-            }
-        }
-        .cardClarisas {
-            height: 500px;
-            width: 400px;
-            border: 2px solid gray;
-            .cardImage {
-                height: 50%;
-                width: 100%;
-                top: 0;
-            }
-            .cardText {
-                .h2 {
-                    font-size: $h2;
-                    color: $negro;
-                    padding-left: 10px;
-    
-                }
-                .p {
-                    font-size: $p;
-                    color: $negro;
-                    padding-left: 10px;
-                }
-                .a{
-                    font-size: $p;
-                    list-style-type: none;
-                    padding-left: 10px;
-                    bottom: 0;
-                }
-            }
-        }
-        .cardEdificap {
-            height: 500px;
-            width: 400px;
-            border: 2px solid gray;
-            .cardImage {
-                height: 50%;
-                width: 100%;
-                top: 0;
-            }
-            .cardText {
-                h2 {
-                    font-size: $h2;
-                    color: $negro;
-                    padding-left: 10px;
-    
-                }
-                p {
-                    font-size: $p;
-                    color: $negro;
-                    padding-left: 10px;
-                }
-                a{
                     font-size: $p;
                     list-style-type: none;
                     padding-left: 10px;
@@ -211,3 +61,119 @@
     }
 }    
 
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mainProyectos {
+        display: flex;
+        flex-direction: column;
+
+        .divProyectos {
+            grid-area: divProyectos;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-left: 5%;
+            h1 {
+                text-decoration: none;
+            }
+        }
+        .secCard{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 1%;
+            padding-right: 1%;
+            
+            .cardAktual {
+                height: 500px;
+                width: 90%;
+                border: 2px solid gray;
+                margin: 1%;
+                .cardImage {
+                    height: 50%;
+                    width: 100%;
+                    top: 0;
+                    object-fit: cover;
+                }
+                .cardText {
+                    .h2 {
+                        font-size: $h2;
+                        color: $negro;
+                        padding-left: 10px;
+                    }
+                    .p {
+                        font-size: $p;
+                        color: $negro;
+                        padding-left: 10px;
+                    }
+                    .a{
+                        font-size: $p;
+                        list-style-type: none;
+                        padding-left: 10px;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .mainProyectos {
+        display: flex;
+        flex-direction: column;
+
+        .divProyectos {
+            grid-area: divProyectos;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-left: 5%;
+            h1 {
+                text-decoration: none;
+            }
+        }
+        .secCard{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 1%;
+            padding-right: 1%;
+            
+            .cardAktual {
+                height: 500px;
+                width: 90%;
+                border: 2px solid gray;
+                margin: 1%;
+                .cardImage {
+                    height: 50%;
+                    width: 100%;
+                    top: 0;
+                    object-fit: cover;
+                }
+                .cardText {
+                    .h2 {
+                        font-size: $h2;
+                        color: $negro;
+                        padding-left: 10px;
+                    }
+                    .p {
+                        font-size: $p;
+                        color: $negro;
+                        padding-left: 10px;
+                    }
+                    .a{
+                        font-size: $p;
+                        list-style-type: none;
+                        padding-left: 10px;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}

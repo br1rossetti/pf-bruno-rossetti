@@ -6,6 +6,7 @@
     <meta name="description" content="Desde la creación de interfaces cautivadoras hasta la optimización de flujos de usuario intuitivos, sumérgete en el mundo del diseño que redefine la forma en que interactuamos con la tecnología.">
     <meta name="keywords"  content="EXPERIENCIA DE USUARIO, USABILIDAD, DISEÑO, UX, UI, HTML, CSS">
     <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,61 +16,33 @@
 
 <body id="bodyHabilidades">
 <!-- HEADER -->
-    <header class="headerGrid">
-        <div class="headerLogo">
-            <a href="../index.html">
-                <img src="../assets/icon/logo-br1.svg" alt="Logo Bruno">
-            </a>
-        </div> 
-        <nav class="headerNav">
-            <ul class="navUl">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./proyectos.html">Proyectos</a>
-                </li>
-                <li>
-                    <a href="./sobre-mi.html">Sobre Mí</a>
-                </li>
-                <li>
-                    <a href="./habilidades.html">Habilidades</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="headerIconos">
-            <ul class="headerIconosUl">
-                <li>
-                    <a href="https://www.linkedin.com/in/bruno-rossetti1/" target="_blank">
-                        <img src="../assets/icon/iconos-header/linkedin.svg" alt="Icono de Linkedin">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/design_br1/" target="_blank">
-                        <img src="../assets/icon/iconos-header/instagram.svg" alt="Icono de Instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/br1diseno" target="_blank">
-                        <img src="../assets/icon/iconos-header/facebook.svg" alt="Icono de Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:bruno.rossetti10@gmail.com" target="_blank">
-                        <img src="../assets/icon/iconos-header/google.svg" alt="Icono de Google">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.behance.net/design_br1" target="_blank">
-                        <img src="../assets/icon/iconos-header/behance.svg" alt="Icono de Behance">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
+<nav class="navbar navbar-expand-lg bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html"><img src="../assets/icon/logo-br1.svg" alt="Logo Bruno"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./proyectos.html">Mis Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./sobre-mi.html">SobreMi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./habilidades.html">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 <!-- MAIN -->
     <main class="mainHabilidades">
         <div class="secTituloHabilidades">
@@ -152,5 +125,6 @@
             <p>+54 3544 - 614226</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

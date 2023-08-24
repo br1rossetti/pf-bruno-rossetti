@@ -10,6 +10,7 @@
     "headerLogo headerNav headerIconos";
     position: sticky;
     top: 0;
+    z-index: 100;
     .headerLogo {
         grid-area: headerLogo;
         display: flex;

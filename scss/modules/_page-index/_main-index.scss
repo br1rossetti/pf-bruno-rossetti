@@ -13,17 +13,21 @@ main {
         align-items: center;
             .h1Index{
                 font-size: $h1;
-                color: $negro;  
+                color: $negro;
+                text-align: center;  
             }
             .h2Index{
                 font-size: $h2;
                 color: $c-secundario;
+                text-align: center;
             }
             .pIndex{
                 font-size: $p;
+                text-align: center;
             }
             .aIndex{
                 font-size: $p;
+                text-align: center;
                 .btnContactarme {
                     height: 50px;
                     width: 250px;
@@ -48,4 +52,122 @@ main {
                 margin-top: 20px;
             }
         }    
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .sectionTitulo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+                .h1Index{
+                    font-size: $h1;
+                    color: $negro;
+                    text-align: center;
+                }
+                .h2Index{
+                    font-size: $h2;
+                    color: $c-secundario;
+                    text-align: center;
+                }
+                .pIndex{
+                    font-size: $p;
+                    text-align: center;
+                }
+                .aIndex{
+                    font-size: $p;
+                    text-align: center;
+                    .btnContactarme {
+                        height: 50px;
+                        width: 250px;
+                        background-color: $c-secundario;
+                        color: black;
+                        border-radius: 5px;
+                        border: none;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        .divFotoPerfil{
+            grid-area: divFotoPerfil;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+                img {
+                    margin-top: 20px;
+                    width: 80%;
+                }
+            }    
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .sectionTitulo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+                .h1Index{
+                    font-size: $h1;
+                    color: $negro;
+                    text-align: center;
+                }
+                .h2Index{
+                    font-size: $h2;
+                    color: $c-secundario;
+                    text-align: center;
+                }
+                .pIndex{
+                    font-size: $p;
+                    text-align: center;
+                }
+                .aIndex{
+                    font-size: $p;
+                    text-align: center;
+                    .btnContactarme {
+                        height: 50px;
+                        width: 250px;
+                        background-color: $c-secundario;
+                        color: black;
+                        border-radius: 5px;
+                        border: none;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        .divFotoPerfil{
+            grid-area: divFotoPerfil;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+                img {
+                    margin-top: 20px;
+                    width: 80%;
+                }
+        }    
+    }
+
+
 }
