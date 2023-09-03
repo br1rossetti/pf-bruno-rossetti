@@ -1,0 +1,24 @@
+/* CONDICIONALES */
+
+$vista: desktop;
+$vista-r: mobile;
+
+@if $vista == desktop {
+    body {
+        @media screen and (min-width: 1024px) {
+
+        }
+    }
+} @else if $vista == mobile {
+    body {
+        @media screen and (min-width: 320px) {
+
+        }
+    }
+} @else {
+    body {
+        @media screen and (min-width: 319px) {
+
+        }
+    }
+}    

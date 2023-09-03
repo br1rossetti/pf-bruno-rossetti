@@ -1,0 +1,20 @@
+/* MIXINGS SIN PARAMETROS */
+/*Aca meter resteo general, list reset, footer y heade a utilizar y despues llamarlos con */
+
+/* MIXING CON PARAMETROS */
+@mixin flexbox ($direction, $wrap, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@include flexbox(row, wrap, center, center);
+
+/* MIXINGS CON PARAMETROS Y VALORES POR DEFAULT */
+@mixin contenedor ($color, $alto:200px, $ancho:100px) {
+    background-color: $color;
+    height: $alto;
+    width: $ancho;
+}
