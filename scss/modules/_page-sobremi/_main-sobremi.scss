@@ -35,16 +35,30 @@
     .sectionTexto {
         grid-area: sectionTexto;
         @include flexbox (column, nowrap, default, default);
-        margin: 40px;
+        margin: 5% 5%;
+        width: 100%;
         @media (max-width: 768px) {
             @include flexbox (column, nowrap, flex-start, center);
         }
         div {
+            @media (max-width: 768px) {
+                @include flexbox (column, nowrap, center, center);
+            }
             text-decoration: none;
+            .h1Texto {
+                font-size: $h1;
+                color: $negro;
+                text-align: center;
+            }
             .textosSobreMi {
                 font-size: $h1;
                 margin-bottom: 0;
                 margin-top: 20px;
+                width: 100%;
+                font-size: $p;
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
             }
             .botonesSobreMi {
                 @include flexbox (row, nowrap, space-evenly, center);

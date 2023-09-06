@@ -334,7 +334,8 @@ body {
   flex-wrap: nowrap;
   justify-content: default;
   align-items: default;
-  margin: 40px;
+  margin: 5% 5%;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .mainSobreMi .sectionTexto {
@@ -348,10 +349,31 @@ body {
 .mainSobreMi .sectionTexto div {
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .mainSobreMi .sectionTexto div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.mainSobreMi .sectionTexto div .h1Texto {
+  font-size: 3, 5rem;
+  color: #111112;
+  text-align: center;
+}
 .mainSobreMi .sectionTexto div .textosSobreMi {
   font-size: 3, 5rem;
   margin-bottom: 0;
   margin-top: 20px;
+  width: 100%;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .mainSobreMi .sectionTexto div .textosSobreMi {
+    width: 100%;
+  }
 }
 .mainSobreMi .sectionTexto div .botonesSobreMi {
   display: flex;
@@ -540,6 +562,7 @@ body {
   grid-template-rows: 1fr;
   gap: 10px;
   grid-template-areas: "sectionUno sectionDos";
+  height: 100%;
 }
 .mainContacto .sectionUno {
   grid-area: sectionUno;

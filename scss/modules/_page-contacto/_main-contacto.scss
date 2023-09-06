@@ -9,6 +9,7 @@
     @include grid (1fr 1fr,1fr,10px);
     grid-template-areas:
     "sectionUno sectionDos";
+    height: 100%;
     .sectionUno {
         grid-area: sectionUno;
         @include flexbox (column, nowrap, center, flex-start);
