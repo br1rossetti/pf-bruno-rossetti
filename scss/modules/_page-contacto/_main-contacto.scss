@@ -32,7 +32,7 @@
     }
     .sectionDos {
         grid-area: sectionDos;
-        color: white;
+        color: $blanco;
         @include grid (1fr,1fr 4fr,10px);
         grid-template-areas:
         "tituloSectionDos"
@@ -72,59 +72,48 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
+        @include grid (1fr,1fr 2fr,0px);
+        grid-template-areas:
+        "sectionUno" 
+        "sectionDos";
         .sectionUno {
             grid-area: sectionUno;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flexbox (column, nowrap, center, center);
             margin: 5% 0;
             color: $blanco;
+            text-align: center;
+            @media (max-width: 768px) {
+                margin: 2% 0%;
+            }
         }
         .sectionDos {
             grid-area: sectionDos;
             color: $blanco;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 4fr;
+            @include grid (1fr,1fr 4fr,0px);
             grid-template-areas:
             "tituloSectionDos"
             "formSectionDos";
             .tituloSectionDos {
                 grid-area: tituloSectionDos;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
+                @include flexbox (row, wrap, center, center);
+                margin: 0;
+                padding: 0;
+                height: 50%;
+                text-align: center;
+
             }
             .formSectionDos {
                 grid-area: formSectionDos;
-                display: flex;
-                flex-direction: column;
+                @include flexbox (column, nowrap, default, default);
                 padding: 20px;
-                font-size: 1rem;
+                font-size: $p;
                 input, textarea{
                     outline: none;
                     border: 1;
                     padding: 5px;
                 }
                 .botonEnviar {
-                    display: flex;
-                    background-color: $c-secundario;
-                    border-radius: 5px;
-                    border: none;
-                    height: 50px;
-                    width: 250px;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 20px;
-                    font-size: 1rem;
-                    font-weight: 500;
-                    color: $negro;
+                    width: 100%;
                 }
             }
         }

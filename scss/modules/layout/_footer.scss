@@ -18,26 +18,20 @@
     }
     .footerLogo  {
         grid-area: footerLogo;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flexbox (row, nowrap, center, center);
         margin: 10px;
     }
     .footerDerechos {
         grid-area: footerDerechos;
+        @include flexbox (row, nowrap, center, center);
         color: $blanco;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
+        
     }
     .footerWp {
         grid-area: footerWp;
+        @include flexbox (row, nowrap, center, center);
         color: $blanco;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
     }
 }
