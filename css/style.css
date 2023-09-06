@@ -580,7 +580,7 @@ body {
 }
 /* ESTILOS MAIN CONTACTO */
 .mainContacto {
-  background-image: url(/assets/img/banner-computadora-br1.webp);
+  background-image: url(../assets/img/banner-computadora-br1.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
