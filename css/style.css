@@ -657,7 +657,7 @@ body {
 }
 @media (min-width: 0px) and (max-width: 1024px) {
   .mainContacto {
-    background-image: url(/assets/img/banner-computadora-br1.webp);
+    background-image: url(../assets/img/banner-computadora-br1.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
