@@ -420,6 +420,106 @@ textarea:focus {
 
 
 
+/*ESTILOS HEADER */
+
+.headerGrid {
+    background-color: #011F26;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "headerLogo headerNav headerIconos";
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    .headerLogo {
+        grid-area: headerLogo;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        img {
+            animation-name: logoMove;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: 2s;
+            animation-delay: 0.5s;
+        }
+    }
+    .headerNav {
+        grid-area: headerNav;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .navUl {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            li {
+                list-style-type: none;
+                a {
+                    color: white;
+                    margin: 10px;
+                    padding: 0;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    &:hover {
+                        color: $c-secundario;
+                    }
+                }
+            }
+        }
+    }
+    .headerIconos {
+        height: 100%;
+        margin-left: 13%;
+        grid-area: headerIconos;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .headerIconosUl {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li{
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                a {
+                    color: white !important;
+                    display: flex;
+                    align-items: center;
+                    margin: 10px;
+                    padding: 0;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    &:hover {
+                        color: $c-secundario;
+                }
+            }
+        }
+    }
+}
+}
+
+@keyframes logoMove {
+    0% {width: 50%;}
+    50% {width: 75%;}
+    100% {width: 100%;}
+}
+
+
+
 
 
 

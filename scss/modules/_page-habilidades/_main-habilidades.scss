@@ -1,45 +1,40 @@
 /* ESTILOS MAIN HABILIDADES */
 
 .mainHabilidades {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr;
+    @include grid (1fr,1fr 6fr,0px);
     grid-template-areas: 
     "secTituloHabilidades"
     "secCardsHabilidades";
-    column-gap: 20px;
     .secTituloHabilidades {
         grid-area: secTituloHabilidades;
-        display: flex;
-        justify-content: start;
-        align-items: center;
+        @include flexbox (row, wrap, start, center);
         margin-left: 5%;
         h1 {
-            text-decoration: none;
+            font-size: $h1;
+            color: $negro;
+            text-align: center; 
         }
     }
     .secCardsHabilidades {
-        margin-bottom: 2%;
         grid-area: secCardsHabilidades;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
+        @include flexbox (row, wrap, space-evenly, center);
         .divHabilidades {
+            @include flexbox (column, nowrap, initial, center);
             background-color: $gris;
             border-radius: 15px;
-            height: 100%;
             width: 30%;
-            display: flex;
-            flex-direction: column;
-            justify-content: initial;
-            align-items: center;
-            margin: 50px 0px 50px 0px;
+            margin-bottom: 10%;
+            &:hover {
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            }
             .iconHabilidades {
                 height: 100px;
             }
             h2 {
-                text-decoration: none;
+                font-size: $h1;
+                color: $negro;
+                text-align: center;
+                font-weight: 500;
             }
             ul {
                 display: flex;
@@ -47,17 +42,25 @@
                 justify-content: center;
                 align-items: left;
                 li {
-                    font-size: 0.8rem;
+                    font-size: $li;
                 }
             }
             .marginHerramientas {
-                margin-top: 20px;
+                margin: 10px 0px;
+                font-size: $h1;
+                color: $negro;
+                text-align: center;
             }
             div {
-                text-decoration: none;
                 .iconoHerramientas {
-                    height: 60%;
-                    margin-top: 10px;
+                    height: 40%;
+                }
+            }
+            a {
+                text-decoration: none;
+                button {
+                    @extend .btn;
+                    margin: 10% 0px;
                 }
             }
         }
@@ -65,43 +68,42 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 0px) and (max-width: 1024px){
     .mainHabilidades {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include grid (1fr,1fr,0px);
+        grid-template-areas: 
+        "secTituloHabilidades"
+        "secCardsHabilidades";
         .secTituloHabilidades {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            grid-area: secTituloHabilidades;
+            @include flexbox (column, wrap, center, center);
+            margin: 2% 0;
             h1 {
-                text-decoration: none;
+                font-size: $h1;
+                color: $negro;
+                text-align: center; 
             }
         }
         .secCardsHabilidades {
-            margin-bottom: 2%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            
+            grid-area: secCardsHabilidades;
+            @include flexbox (row, wrap, space-evenly, center);
             .divHabilidades {
+                @include flexbox (column, nowrap, initial, center);
                 background-color: $gris;
                 border-radius: 15px;
-                height: 100%;
                 width: 90%;
-                display: flex;
-                flex-direction: column;
-                justify-content: initial;
-                align-items: center;
-                margin: 50px 0px 50px 0px;
+                margin-bottom: 10%;
+                &:hover {
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+                }
                 .iconHabilidades {
                     height: 100px;
                 }
                 h2 {
-                    text-decoration: none;
+                    @include flexbox (column, wrap, center, center);
+                    font-size: $h1;
+                    color: $negro;
+                    font-weight: 500;
                 }
                 ul {
                     display: flex;
@@ -109,79 +111,18 @@
                     justify-content: center;
                     align-items: left;
                     li {
-                        font-size: 0.8rem;
+                        font-size: $li;
                     }
                 }
                 .marginHerramientas {
-                    margin-top: 20px;
+                    margin: 10px 0px;
+                    font-size: $h1;
+                    color: $negro;
+                    text-align: center;
                 }
                 div {
-                    text-decoration: none;
                     .iconoHerramientas {
-                        height: 60%;
-                        margin-top: 10px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-    .mainHabilidades {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .secTituloHabilidades {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            h1 {
-                text-decoration: none;
-            }
-        }
-        .secCardsHabilidades {
-            margin-bottom: 2%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            
-            .divHabilidades {
-                background-color: $gris;
-                border-radius: 15px;
-                height: 100%;
-                width: 90%;
-                display: flex;
-                flex-direction: column;
-                justify-content: initial;
-                align-items: center;
-                margin: 50px 0px 50px 0px;
-                .iconHabilidades {
-                    height: 100px;
-                }
-                h2 {
-                    text-decoration: none;
-                }
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: left;
-                    li {
-                        font-size: 0.8rem;
-                    }
-                }
-                .marginHerramientas {
-                    margin-top: 20px;
-                }
-                div {
-                    text-decoration: none;
-                    .iconoHerramientas {
-                        height: 60%;
-                        margin-top: 10px;
+                        height: 40%;
                     }
                 }
             }

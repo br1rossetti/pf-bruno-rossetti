@@ -1,16 +1,31 @@
-// VARIABLES VARIOS
+// VARIABLES TAMAÑO DE LETRAS 
 $h1: 3,5rem;
 $h2: 2rem;
 $h3: 1,5rem;
 $h4: 1,25rem;
 $p: 1rem;
+$li: 0.8rem;
 
 
 // VARIABLES PALETA DE COLORES
 $c-principal: #011F26;
+$cp-hover: #013321;
 $c-secundario: #EECE1A;
+$cs-hover: #F7A50F;
 $gris: #E6E6E6;
-$blanco: white;
+$blanco: rgb(245,245,245);
 $negro: #111112;
 
-// VARIABLES BACKGROUNDS
+
+// VARIABLES ANIMACIONES
+@keyframes slideRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

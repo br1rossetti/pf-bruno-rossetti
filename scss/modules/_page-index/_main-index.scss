@@ -1,16 +1,12 @@
 /* ESTILOS DEL MAIN INDEX */
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+
+.mainIndex {
+    @include grid (2fr,1fr,20px);
     grid-template-areas: 
     "sectionTitulo divFotoPerfil";
     .sectionTitulo{
         grid-area: sectionTitulo;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexbox (column, wrap, center, center);
             .h1Index{
                 font-size: $h1;
                 color: $negro;
@@ -18,156 +14,86 @@ main {
             }
             .h2Index{
                 font-size: $h2;
+                font-weight: 700;
                 color: $c-secundario;
                 text-align: center;
+                animation: slideRight 2s ease-in-out infinite;
             }
+
             .pIndex{
                 font-size: $p;
+                color: $negro;
                 text-align: center;
+                margin: 0;
             }
             .aIndex{
                 font-size: $p;
-                text-align: center;
+                width: 250px;
                 .btnContactarme {
-                    height: 50px;
-                    width: 250px;
-                    background-color: $c-secundario;
-                    color: black;
-                    border-radius: 5px;
-                    border: none;
-                    font-size: 1rem;
-                    font-weight: 500;
-                    margin-top: 10px;
+                    @extend .btn;
+                    background-color: $negro;
+                    color: $blanco;
                 }
             }
         }
     .divFotoPerfil{
         grid-area: divFotoPerfil;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-            img {
+        @include flexbox (column, wrap, center, center);
+            .imgPortada {
                 margin-top: 20px;
-            }
-        }    
+                max-width: 100%;
+                width: 100%;
+        }
+    }    
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+@include responsive (480px,991px) {
+    .mainIndex {
+        @include grid (1fr,2fr,20px);
+        grid-template-areas: 
+        "sectionTitulo" 
+        "divFotoPerfil";
         .sectionTitulo{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5%;
-                .h1Index{
-                    font-size: $h1;
-                    color: $negro;
-                    text-align: center;
-                }
-                .h2Index{
-                    font-size: $h2;
-                    color: $c-secundario;
-                    text-align: center;
-                }
-                .pIndex{
-                    font-size: $p;
-                    text-align: center;
-                }
-                .aIndex{
-                    font-size: $p;
-                    text-align: center;
-                    .btnContactarme {
-                        height: 50px;
-                        width: 250px;
-                        background-color: $c-secundario;
-                        color: black;
-                        border-radius: 5px;
-                        border: none;
-                        font-size: 1rem;
-                        font-weight: 500;
-                        margin-top: 10px;
-                    }
-                }
+            grid-area: sectionTitulo;
+            @include flexbox (column, wrap, center, center);
+            .h1Index {
+                margin-top: 5%;
+            }
             }
         .divFotoPerfil{
             grid-area: divFotoPerfil;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-                img {
+            @include flexbox (column, wrap, center, center);
+                .imgPortada {
                     margin-top: 20px;
-                    width: 80%;
-                }
-            }    
-    }
-
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .sectionTitulo{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5%;
-                .h1Index{
-                    font-size: $h1;
-                    color: $negro;
-                    text-align: center;
-                }
-                .h2Index{
-                    font-size: $h2;
-                    color: $c-secundario;
-                    text-align: center;
-                }
-                .pIndex{
-                    font-size: $p;
-                    text-align: center;
-                }
-                .aIndex{
-                    font-size: $p;
-                    text-align: center;
-                    .btnContactarme {
-                        height: 50px;
-                        width: 250px;
-                        background-color: $c-secundario;
-                        color: black;
-                        border-radius: 5px;
-                        border: none;
-                        font-size: 1rem;
-                        font-weight: 500;
-                        margin-top: 10px;
-                    }
-                }
+                    max-width: 100%;
+                    width: 75%;
             }
-        .divFotoPerfil{
-            grid-area: divFotoPerfil;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-                img {
-                    margin-top: 20px;
-                    width: 80%;
-                }
         }    
     }
+}
 
-
+@include responsive (1px,480px) {
+    .mainIndex {
+        @include grid (1fr,2fr,20px);
+        grid-template-areas: 
+        "sectionTitulo" 
+        "divFotoPerfil";
+        .sectionTitulo{
+            grid-area: sectionTitulo;
+            @include flexbox (column, wrap, center, center);
+            .h1Index {
+                margin-top: 5%;
+            }
+            }
+        .divFotoPerfil{
+            grid-area: divFotoPerfil;
+            @include flexbox (column, wrap, center, center);
+                .imgPortada {
+                    margin-top: 20px;
+                    max-width: 100%;
+                    width: 100%;
+            }
+        }    
+    }
 }

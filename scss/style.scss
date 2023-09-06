@@ -1,9 +1,17 @@
+
+
 @import "./modules/_variables.scss";
-@import "./modules/_reset.scss";
-@import "./modules/header";
+@import "./modules/mixins";
+@import "./modules/extends";
+body {
+    @include reset
+}
 @import "./modules/_page-index/main-index";
 @import "./modules/_page-proyectos/main-proyectos";
 @import "./modules/_page-sobremi/main-sobremi";
 @import "./modules/_page-habilidades/main-habilidades";
 @import "./modules/_page-contacto/main-contacto";
-@import "./modules/footer";
+@import "./modules/layout/footer";
+
+
+

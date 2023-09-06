@@ -1,8 +1,17 @@
-/* MIXINGS SIN PARAMETROS */
-/*Aca meter resteo general, list reset, footer y heade a utilizar y despues llamarlos con */
+// MIXINGS SIN PARAMETROS RESET, LIST, FOOTER, HEADER
 
-/* MIXING CON PARAMETROS */
-@mixin flexbox ($direction, $wrap, $justify, $align) {
+@mixin reset {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+// MIXING CON PARAMETROS
+@mixin flexbox ($direction: column, $wrap: nowrap, $justify: default, $align: default) {
     display: flex;
     flex-direction: $direction;
     flex-wrap: $wrap;
@@ -10,11 +19,27 @@
     align-items: $align;
 }
 
-@include flexbox(row, wrap, center, center);
+@mixin grid ($col, $row, $gap) {
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    gap: $gap;
+}
 
-/* MIXINGS CON PARAMETROS Y VALORES POR DEFAULT */
-@mixin contenedor ($color, $alto:200px, $ancho:100px) {
+// MIXINGS CON PARAMETROS Y VALORES POR DEFAULT
+@mixin contenedorr ($color, $alto:200px, $ancho:100px) {
     background-color: $color;
     height: $alto;
     width: $ancho;
 }
+
+// MIXINGS RESPONISVE
+@mixin responsive($min, $max) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+
+// @media (min-width: 1025px) Computadoras
+// @media (min-width: 769px) and (max-width: 1024px) Tablets
+// @media (max-width: 768px) Celulares

@@ -1,179 +1,76 @@
 /* ESTILOS MAIN PROYECTOS */
 
-
 .mainProyectos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 2fr 2fr;
-    grid-template-areas: 
-    "divProyectos"
-    "secCardsHabilidades"
-    "secCardsInferiores";
     .divProyectos {
-        grid-area: divProyectos;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        margin-left: 5%;
-        h1 {
-            text-decoration: none;
+        @include flexbox (row, wrap, center, center);
+        max-width: 1200px;
+        margin: auto;
+        .h1Proyectos {
+            font-size: $h1;
+            text-align: center;
+            margin: 2% 0%;
         }
     }
+
     .secCard{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 1%;
-        padding-right: 1%;
-        
-        .cardAktual {
-            height: 500px;
-            width: 33%;
-            border: 2px solid gray;
-            margin: 1%;
-            position: relative;
-            .cardImage {
-                height: 50%;
-                width: 100%;
-                top: 0;
+        @include grid (repeat(3, 1fr),1fr 1fr, 20px);
+        gap: 20px;
+        padding: 0px 20px;
+        margin: 0px 20px;
+        @media (max-width: 1024px) {
+            @include grid (1fr,1fr, 20px);
+        }
+        .card {
+            background-color: $blanco;
+            border: 1px solid $gris;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 10%;
+            @include flexbox (column, nowrap, default, default);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            &:hover {
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            }
+            .cardImg {
+                max-width: 100%;
+                height: auto;
                 object-fit: contain;
             }
-            .cardText {
+
                 .h2 {
                     font-size: $h2;
                     color: $negro;
-                    padding-left: 10px;
+                    font-weight: 500;
+                    margin: 10px 0;
                 }
                 .p {
                     font-size: $p;
                     color: $negro;
-                    padding-left: 10px;
+                    flex-grow: 1; 
                 }
-                .a{
-                    font-size: $p;
-                    list-style-type: none;
-                    padding-left: 10px;
-                    bottom: 0;
-                }
-            }
-        }
-    }
-}    
-
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .mainProyectos {
-        display: flex;
-        flex-direction: column;
-
-        .divProyectos {
-            grid-area: divProyectos;
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            margin-left: 5%;
-            h1 {
-                text-decoration: none;
-            }
-        }
-        .secCard{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-left: 1%;
-            padding-right: 1%;
-            
-            .cardAktual {
-                height: 500px;
-                width: 90%;
-                border: 2px solid gray;
-                margin: 1%;
-                .cardImage {
-                    height: 50%;
-                    width: 100%;
-                    top: 0;
-                    object-fit: cover;
-                }
-                .cardText {
-                    .h2 {
-                        font-size: $h2;
-                        color: $negro;
-                        padding-left: 10px;
+                .a {
+                    border: none;
+                    margin-top: 10px;
+                    text-decoration: none;
+                    @media (max-width: 1024px) {
+                        @include flexbox (column, nowrap, center, center);
+                        text-decoration: none;
                     }
-                    .p {
-                        font-size: $p;
-                        color: $negro;
-                        padding-left: 10px;
-                    }
-                    .a{
-                        font-size: $p;
-                        list-style-type: none;
-                        padding-left: 10px;
-                        bottom: 0;
-                    }
+                    .btn {
+                        @extend .btn;
+                        cursor: pointer;
+                        transition: background-color 0.3s;
+                        width: 100%;
+                        @media (max-width: 1024px) {
+                            width: 50%;
+                        }
+                        @media (max-width: 768px){
+                            width: 100%;
+                        }
                 }
             }
         }
     }
-}
+}   
 
-@media (min-width: 320px) and (max-width: 767px) {
-    .mainProyectos {
-        display: flex;
-        flex-direction: column;
 
-        .divProyectos {
-            grid-area: divProyectos;
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            margin-left: 5%;
-            h1 {
-                text-decoration: none;
-            }
-        }
-        .secCard{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-left: 1%;
-            padding-right: 1%;
-            
-            .cardAktual {
-                height: 500px;
-                width: 90%;
-                border: 2px solid gray;
-                margin: 1%;
-                .cardImage {
-                    height: 50%;
-                    width: 100%;
-                    top: 0;
-                    object-fit: cover;
-                }
-                .cardText {
-                    .h2 {
-                        font-size: $h2;
-                        color: $negro;
-                        padding-left: 10px;
-                    }
-                    .p {
-                        font-size: $p;
-                        color: $negro;
-                        padding-left: 10px;
-                    }
-                    .a{
-                        font-size: $p;
-                        list-style-type: none;
-                        padding-left: 10px;
-                        bottom: 0;
-                    }
-                }
-            }
-        }
-    }
-
-}

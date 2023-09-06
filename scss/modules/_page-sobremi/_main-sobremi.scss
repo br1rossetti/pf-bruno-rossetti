@@ -1,235 +1,71 @@
 /* ESTILOS MAIN SOBRE MI */
 
 .mainSobreMi {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr;
+    @include grid (1fr 1.5fr,1fr, 20px);
     grid-template-areas: 
     "sectionFotografia sectionTexto";
+    @media (min-width: 769px) and (max-width: 1024px) {
+        @include grid (1fr,1fr,0px);
+        grid-template-areas: 
+        "sectionTexto"
+        "sectionFotografia";
+    }
+    @media (max-width: 768px) {
+        @include grid (1fr,1fr,0px);
+    }
     .sectionFotografia {
         grid-area: sectionFotografia;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexbox (column, nowrap, center, center);
+        @media (min-width: 769px) and (max-width: 1024px) {
+            max-width: 100%;
+            max-height: 60vh;
+            object-fit: contain;
+            width: auto; 
+        }
         .imagenFotografia {
             height: 100%;
+            max-width: 100%;
+            width: 100%;
             object-fit: cover;
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
     }
     .sectionTexto {
         grid-area: sectionTexto;
-        display: flex;
-        flex-direction: column;
+        @include flexbox (column, nowrap, default, default);
         margin: 40px;
-        div {
-            text-decoration: none;
-            h1 .textosSobreMi {
-                font-size: 1rem;
-                margin-bottom: 0;
-                margin-top: 20px;
-            }
+        @media (max-width: 768px) {
+            @include flexbox (column, nowrap, flex-start, center);
         }
         div {
             text-decoration: none;
             .textosSobreMi {
-                font-size: 1rem;
+                font-size: $h1;
                 margin-bottom: 0;
                 margin-top: 20px;
             }
             .botonesSobreMi {
+                @include flexbox (row, nowrap, space-evenly, center);
                 display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                align-items: center;
                 margin-top: 20px;
                 a {
                     text-decoration: none;
                     .btnVerProyectos {
-                        height: 50px;
-                        width: 250px;
-                        background-color: $c-secundario;
-                        color: black;
-                        border-radius: 5px;
-                        border: none;
-                        font-size: 1rem;
-                        font-weight: 500;
+                        @extend .btn;
                     }
-                }
-                a{
-                    text-decoration: none;
                     .btnVerLinkedIn {
-                        height: 50px;
-                        width: 250px;
-                        background-color: none;
-                        color: black;
-                        border-radius: 5px;
-                        border: solid black 2px;
-                        font-size: 1rem;
-                        font-weight: 500;
-                    }
-                    
-                }
-
-            }
-        }
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .mainSobreMi {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        .sectionFotografia {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            .imagenFotografia {
-                object-fit: cover;
-                width: 100%;
-                height: 1000px;
-
-            }
-        }
-        .sectionTexto {
-            grid-area: sectionTexto;
-            display: flex;
-            flex-direction: column;
-            margin: 40px;
-            div {
-                text-decoration: none;
-                h1 .textosSobreMi {
-                    font-size: 1rem;
-                    margin-bottom: 0;
-                    margin-top: 20px;
-                }
-            }
-            div {
-                text-decoration: none;
-                .textosSobreMi {
-                    font-size: 1rem;
-                    margin-bottom: 0;
-                    margin-top: 20px;
-                }
-                .botonesSobreMi {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    margin-top: 20px;
-                    a {
-                        text-decoration: none;
-                        .btnVerProyectos {
-                            height: 50px;
-                            width: 250px;
-                            background-color: $c-secundario;
-                            color: black;
-                            border-radius: 5px;
-                            border: none;
-                            font-size: 1rem;
-                            font-weight: 500;
+                        @extend .btn;
+                        background-color: $c-principal;
+                        color: $blanco;
+                        &:hover {
+                            background-color: $cp-hover;
+                            color: $blanco;
                         }
                     }
-                    a{
-                        text-decoration: none;
-                        .btnVerLinkedIn {
-                            height: 50px;
-                            width: 250px;
-                            background-color: none;
-                            color: black;
-                            border-radius: 5px;
-                            border: solid black 2px;
-                            font-size: 1rem;
-                            font-weight: 500;
-                        }
-                        
-                    }
-    
                 }
             }
         }
     }
-
-}
-
-
-@media (min-width: 320px) and (max-width: 767px) {
-    .mainSobreMi {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        .sectionFotografia {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            .imagenFotografia {
-                object-fit: cover;
-                width: 100%;
-                height: 1000px;
-
-            }
-        }
-        .sectionTexto {
-            grid-area: sectionTexto;
-            display: flex;
-            flex-direction: column;
-            margin: 40px;
-            div {
-                text-decoration: none;
-                h1 .textosSobreMi {
-                    font-size: 1rem;
-                    margin-bottom: 0;
-                    margin-top: 20px;
-                }
-            }
-            div {
-                text-decoration: none;
-                .textosSobreMi {
-                    font-size: 1rem;
-                    margin-bottom: 0;
-                    margin-top: 20px;
-                }
-                .botonesSobreMi {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    margin-top: 20px;
-                    a {
-                        text-decoration: none;
-                        .btnVerProyectos {
-                            height: 50px;
-                            width: 250px;
-                            background-color: $c-secundario;
-                            color: black;
-                            border-radius: 5px;
-                            border: none;
-                            font-size: 1rem;
-                            font-weight: 500;
-                        }
-                    }
-                    a{
-                        text-decoration: none;
-                        .btnVerLinkedIn {
-                            height: 50px;
-                            width: 250px;
-                            background-color: none;
-                            color: black;
-                            border-radius: 5px;
-                            border: solid black 2px;
-                            font-size: 1rem;
-                            font-weight: 500;
-                        }
-                        
-                    }
-    
-                }
-            }
-        }
-    }
-
 }
