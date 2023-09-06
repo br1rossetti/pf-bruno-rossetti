@@ -15,9 +15,12 @@ Mediaqueries trabajadas:
 @media (max-width: 768px) Celulares
 
 Link Mock Up Figma: https://www.figma.com/file/T2ZNYKAv5MaBFCjihmJglX/Desarrollo-Web---BR1---Coderhouse?type=design&node-id=0%3A1&mode=design&t=4rnkurlRd6JjrMXt-1
-Link de Repositorio Github: 
-Link de Github Pages: 
-Link de GitHub:
+
+Link de Repositorio Github: https://github.com/br1rossetti/pf-bruno-rossetti
+
+Link de Github Pages: https://br1rossetti.github.io/pf-bruno-rossetti/
+
 Link de Infinity Free:
+
 Link 404 Infinity Free:
 
