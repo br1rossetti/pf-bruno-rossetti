@@ -289,7 +289,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 0px;
-    grid-template-areas: "sectionTexto" "sectionFotografia";
+    grid-template-areas: "sectionTexto";
   }
 }
 @media (max-width: 768px) {
@@ -298,6 +298,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 0px;
+    grid-template-areas: "sectionTexto";
   }
 }
 .mainSobreMi .sectionFotografia {
@@ -314,6 +315,7 @@ body {
     max-height: 60vh;
     object-fit: contain;
     width: auto;
+    display: none;
   }
 }
 .mainSobreMi .sectionFotografia .imagenFotografia {
@@ -335,7 +337,6 @@ body {
   justify-content: default;
   align-items: default;
   margin: 5% 5%;
-  width: 100%;
 }
 @media (max-width: 768px) {
   .mainSobreMi .sectionTexto {
@@ -347,6 +348,11 @@ body {
   }
 }
 .mainSobreMi .sectionTexto div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
   text-decoration: none;
 }
 @media (max-width: 768px) {
@@ -356,6 +362,7 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 }
 .mainSobreMi .sectionTexto div .h1Texto {
@@ -364,11 +371,17 @@ body {
   text-align: center;
 }
 .mainSobreMi .sectionTexto div .textosSobreMi {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   font-size: 3, 5rem;
   margin-bottom: 0;
   margin-top: 20px;
   width: 100%;
   font-size: 1rem;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .mainSobreMi .sectionTexto div .textosSobreMi {
@@ -384,8 +397,23 @@ body {
   display: flex;
   margin-top: 20px;
 }
+@media (max-width: 768px) {
+  .mainSobreMi .sectionTexto div .botonesSobreMi {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
 .mainSobreMi .sectionTexto div .botonesSobreMi a {
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  .mainSobreMi .sectionTexto div .botonesSobreMi a {
+    margin-top: 2%;
+  }
 }
 .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerLinkedIn {
   background-color: #011F26;
