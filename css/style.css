@@ -23,7 +23,7 @@
     transform: rotate(10deg);
   }
 }
-.btn, .mainContacto .sectionDos .formSectionDos .botonEnviar, .mainProyectos .secCard .card .a .mainContacto .sectionDos .formSectionDos .botonEnviar, .mainContacto .sectionDos .formSectionDos .mainProyectos .secCard .card .a .botonEnviar, .mainHabilidades .secCardsHabilidades .divHabilidades a button, .mainProyectos .secCard .card .a .mainHabilidades .secCardsHabilidades .divHabilidades a button, .mainHabilidades .secCardsHabilidades .divHabilidades a .mainProyectos .secCard .card .a button, .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerLinkedIn, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerLinkedIn, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerLinkedIn, .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerProyectos, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerProyectos, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerProyectos, .mainProyectos .secCard .card .a .btn, .mainProyectos .secCard .card .a .mainIndex .sectionTitulo .aIndex .btnContactarme, .mainIndex .sectionTitulo .aIndex .mainProyectos .secCard .card .a .btnContactarme, .mainIndex .sectionTitulo .aIndex .btnContactarme {
+.btn, .mainIndex404 .sectionTitulo404 .aIndex404 .btnContactarme404, .mainProyectos .secCard .card .a .mainIndex404 .sectionTitulo404 .aIndex404 .btnContactarme404, .mainIndex404 .sectionTitulo404 .aIndex404 .mainProyectos .secCard .card .a .btnContactarme404, .mainContacto .sectionDos .formSectionDos .botonEnviar, .mainProyectos .secCard .card .a .mainContacto .sectionDos .formSectionDos .botonEnviar, .mainContacto .sectionDos .formSectionDos .mainProyectos .secCard .card .a .botonEnviar, .mainHabilidades .secCardsHabilidades .divHabilidades a button, .mainProyectos .secCard .card .a .mainHabilidades .secCardsHabilidades .divHabilidades a button, .mainHabilidades .secCardsHabilidades .divHabilidades a .mainProyectos .secCard .card .a button, .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerLinkedIn, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerLinkedIn, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerLinkedIn, .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerProyectos, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerProyectos, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerProyectos, .mainProyectos .secCard .card .a .btn, .mainProyectos .secCard .card .a .mainIndex .sectionTitulo .aIndex .btnContactarme, .mainIndex .sectionTitulo .aIndex .mainProyectos .secCard .card .a .btnContactarme, .mainIndex .sectionTitulo .aIndex .btnContactarme {
   background-color: #EECE1A;
   border-radius: 15px;
   border: none;
@@ -35,7 +35,7 @@
   text-align: center;
   color: #111112;
 }
-.btn:hover, .mainContacto .sectionDos .formSectionDos .botonEnviar:hover, .mainHabilidades .secCardsHabilidades .divHabilidades a button:hover, .mainProyectos .secCard .card .a .mainHabilidades .secCardsHabilidades .divHabilidades a button:hover, .mainHabilidades .secCardsHabilidades .divHabilidades a .mainProyectos .secCard .card .a button:hover, .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerLinkedIn:hover, .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerProyectos:hover, .mainProyectos .secCard .card .a .btn:hover, .mainIndex .sectionTitulo .aIndex .btnContactarme:hover {
+.btn:hover, .mainIndex404 .sectionTitulo404 .aIndex404 .btnContactarme404:hover, .mainContacto .sectionDos .formSectionDos .botonEnviar:hover, .mainHabilidades .secCardsHabilidades .divHabilidades a button:hover, .mainProyectos .secCard .card .a .mainHabilidades .secCardsHabilidades .divHabilidades a button:hover, .mainHabilidades .secCardsHabilidades .divHabilidades a .mainProyectos .secCard .card .a button:hover, .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerLinkedIn:hover, .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerProyectos:hover, .mainProyectos .secCard .card .a .btn:hover, .mainIndex .sectionTitulo .aIndex .btnContactarme:hover {
   background-color: #F7A50F;
   color: #111112;
 }
@@ -273,18 +273,18 @@ body {
     text-decoration: none;
   }
 }
-.mainProyectos .secCard .card .a .btn, .mainProyectos .secCard .card .a .mainContacto .sectionDos .formSectionDos .botonEnviar, .mainContacto .sectionDos .formSectionDos .mainProyectos .secCard .card .a .botonEnviar, .mainProyectos .secCard .card .a .mainHabilidades .secCardsHabilidades .divHabilidades a button, .mainHabilidades .secCardsHabilidades .divHabilidades a .mainProyectos .secCard .card .a button, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerLinkedIn, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerLinkedIn, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerProyectos, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerProyectos, .mainProyectos .secCard .card .a .mainIndex .sectionTitulo .aIndex .btnContactarme, .mainIndex .sectionTitulo .aIndex .mainProyectos .secCard .card .a .btnContactarme {
+.mainProyectos .secCard .card .a .btn, .mainProyectos .secCard .card .a .mainIndex404 .sectionTitulo404 .aIndex404 .btnContactarme404, .mainIndex404 .sectionTitulo404 .aIndex404 .mainProyectos .secCard .card .a .btnContactarme404, .mainProyectos .secCard .card .a .mainContacto .sectionDos .formSectionDos .botonEnviar, .mainContacto .sectionDos .formSectionDos .mainProyectos .secCard .card .a .botonEnviar, .mainProyectos .secCard .card .a .mainHabilidades .secCardsHabilidades .divHabilidades a button, .mainHabilidades .secCardsHabilidades .divHabilidades a .mainProyectos .secCard .card .a button, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerLinkedIn, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerLinkedIn, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerProyectos, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerProyectos, .mainProyectos .secCard .card .a .mainIndex .sectionTitulo .aIndex .btnContactarme, .mainIndex .sectionTitulo .aIndex .mainProyectos .secCard .card .a .btnContactarme {
   cursor: pointer;
   transition: background-color 0.3s;
   width: 100%;
 }
 @media (max-width: 1024px) {
-  .mainProyectos .secCard .card .a .btn, .mainProyectos .secCard .card .a .mainContacto .sectionDos .formSectionDos .botonEnviar, .mainContacto .sectionDos .formSectionDos .mainProyectos .secCard .card .a .botonEnviar, .mainProyectos .secCard .card .a .mainHabilidades .secCardsHabilidades .divHabilidades a button, .mainHabilidades .secCardsHabilidades .divHabilidades a .mainProyectos .secCard .card .a button, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerLinkedIn, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerLinkedIn, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerProyectos, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerProyectos, .mainProyectos .secCard .card .a .mainIndex .sectionTitulo .aIndex .btnContactarme, .mainIndex .sectionTitulo .aIndex .mainProyectos .secCard .card .a .btnContactarme {
+  .mainProyectos .secCard .card .a .btn, .mainProyectos .secCard .card .a .mainIndex404 .sectionTitulo404 .aIndex404 .btnContactarme404, .mainIndex404 .sectionTitulo404 .aIndex404 .mainProyectos .secCard .card .a .btnContactarme404, .mainProyectos .secCard .card .a .mainContacto .sectionDos .formSectionDos .botonEnviar, .mainContacto .sectionDos .formSectionDos .mainProyectos .secCard .card .a .botonEnviar, .mainProyectos .secCard .card .a .mainHabilidades .secCardsHabilidades .divHabilidades a button, .mainHabilidades .secCardsHabilidades .divHabilidades a .mainProyectos .secCard .card .a button, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerLinkedIn, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerLinkedIn, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerProyectos, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerProyectos, .mainProyectos .secCard .card .a .mainIndex .sectionTitulo .aIndex .btnContactarme, .mainIndex .sectionTitulo .aIndex .mainProyectos .secCard .card .a .btnContactarme {
     width: 50%;
   }
 }
 @media (max-width: 768px) {
-  .mainProyectos .secCard .card .a .btn, .mainProyectos .secCard .card .a .mainContacto .sectionDos .formSectionDos .botonEnviar, .mainContacto .sectionDos .formSectionDos .mainProyectos .secCard .card .a .botonEnviar, .mainProyectos .secCard .card .a .mainHabilidades .secCardsHabilidades .divHabilidades a button, .mainHabilidades .secCardsHabilidades .divHabilidades a .mainProyectos .secCard .card .a button, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerLinkedIn, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerLinkedIn, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerProyectos, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerProyectos, .mainProyectos .secCard .card .a .mainIndex .sectionTitulo .aIndex .btnContactarme, .mainIndex .sectionTitulo .aIndex .mainProyectos .secCard .card .a .btnContactarme {
+  .mainProyectos .secCard .card .a .btn, .mainProyectos .secCard .card .a .mainIndex404 .sectionTitulo404 .aIndex404 .btnContactarme404, .mainIndex404 .sectionTitulo404 .aIndex404 .mainProyectos .secCard .card .a .btnContactarme404, .mainProyectos .secCard .card .a .mainContacto .sectionDos .formSectionDos .botonEnviar, .mainContacto .sectionDos .formSectionDos .mainProyectos .secCard .card .a .botonEnviar, .mainProyectos .secCard .card .a .mainHabilidades .secCardsHabilidades .divHabilidades a button, .mainHabilidades .secCardsHabilidades .divHabilidades a .mainProyectos .secCard .card .a button, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerLinkedIn, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerLinkedIn, .mainProyectos .secCard .card .a .mainSobreMi .sectionTexto div .botonesSobreMi a .btnVerProyectos, .mainSobreMi .sectionTexto div .botonesSobreMi a .mainProyectos .secCard .card .a .btnVerProyectos, .mainProyectos .secCard .card .a .mainIndex .sectionTitulo .aIndex .btnContactarme, .mainIndex .sectionTitulo .aIndex .mainProyectos .secCard .card .a .btnContactarme {
     width: 100%;
   }
 }
@@ -740,14 +740,14 @@ body {
   }
 }
 /* ESTILOS DEL MAIN 404 */
-.mainIndex {
+.mainIndex404 {
   display: grid;
   grid-template-columns: 4fr;
   grid-template-rows: 1fr;
   gap: 20px;
   grid-template-areas: "sectionTitulo divFotoPerfil";
 }
-.mainIndex .sectionTitulo {
+.mainIndex404 .sectionTitulo404 {
   grid-area: sectionTitulo;
   display: flex;
   flex-direction: column;
@@ -755,34 +755,34 @@ body {
   justify-content: center;
   align-items: center;
 }
-.mainIndex .sectionTitulo .h1Index {
+.mainIndex404 .sectionTitulo404 .h1Index404 {
   font-size: 3, 5rem;
   font-weight: 900;
   color: #111112;
   text-align: center;
 }
-.mainIndex .sectionTitulo .h2Index {
+.mainIndex404 .sectionTitulo404 .h2Index404 {
   font-size: 5rem;
   font-weight: 700;
   color: #EECE1A;
   text-align: center;
   animation: fadeInOutWithRotation 3s ease-in-out infinite;
 }
-.mainIndex .sectionTitulo .pIndex {
+.mainIndex404 .sectionTitulo404 .pIndex404 {
   font-size: 1rem;
   color: #111112;
   text-align: center;
   margin: 0;
 }
-.mainIndex .sectionTitulo .aIndex {
+.mainIndex404 .sectionTitulo404 .aIndex404 {
   font-size: 1rem;
   width: 250px;
 }
-.mainIndex .sectionTitulo .aIndex .btnContactarme {
+.mainIndex404 .sectionTitulo404 .aIndex404 .btnContactarme404 {
   background-color: #111112;
   color: rgb(245, 245, 245);
 }
-.mainIndex .divFotoPerfil {
+.mainIndex404 .divFotoPerfil404 {
   grid-area: divFotoPerfil;
   display: flex;
   flex-direction: column;
@@ -790,21 +790,21 @@ body {
   justify-content: center;
   align-items: center;
 }
-.mainIndex .divFotoPerfil .imgPortada {
+.mainIndex404 .divFotoPerfil404 .imgPortada404 {
   margin-top: 20px;
   max-width: 100%;
   width: 100%;
 }
 
 @media (min-width: 480px) and (max-width: 991px) {
-  .mainIndex {
+  .mainIndex404 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
     gap: 20px;
     grid-template-areas: "sectionTitulo" "divFotoPerfil";
   }
-  .mainIndex .sectionTitulo {
+  .mainIndex404 .sectionTitulo404 {
     grid-area: sectionTitulo;
     display: flex;
     flex-direction: column;
@@ -812,10 +812,10 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .mainIndex .sectionTitulo .h1Index {
+  .mainIndex404 .sectionTitulo404 .h1Index404 {
     margin-top: 5%;
   }
-  .mainIndex .divFotoPerfil {
+  .mainIndex404 .divFotoPerfil404 {
     grid-area: divFotoPerfil;
     display: flex;
     flex-direction: column;
@@ -823,21 +823,21 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .mainIndex .divFotoPerfil .imgPortada {
+  .mainIndex404 .divFotoPerfil404 .imgPortada404 {
     margin-top: 20px;
     max-width: 100%;
     width: 100%;
   }
 }
 @media (min-width: 1px) and (max-width: 480px) {
-  .mainIndex {
+  .mainIndex404 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
     gap: 20px;
     grid-template-areas: "sectionTitulo" "divFotoPerfil";
   }
-  .mainIndex .sectionTitulo {
+  .mainIndex404 .sectionTitulo404 {
     grid-area: sectionTitulo;
     display: flex;
     flex-direction: column;
@@ -845,10 +845,10 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .mainIndex .sectionTitulo .h1Index {
+  .mainIndex404 .sectionTitulo404 .h1Index404 {
     margin-top: 5%;
   }
-  .mainIndex .divFotoPerfil {
+  .mainIndex404 .divFotoPerfil404 {
     grid-area: divFotoPerfil;
     display: flex;
     flex-direction: column;
@@ -856,7 +856,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .mainIndex .divFotoPerfil .imgPortada {
+  .mainIndex404 .divFotoPerfil404 .imgPortada404 {
     margin-top: 20px;
     max-width: 100%;
     width: 100%;

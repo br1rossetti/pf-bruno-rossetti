@@ -1,19 +1,19 @@
 /* ESTILOS DEL MAIN 404 */
 
-.mainIndex {
+.mainIndex404 {
     @include grid (4fr,1fr,20px);
     grid-template-areas: 
     "sectionTitulo divFotoPerfil";
-    .sectionTitulo{
+    .sectionTitulo404{
         grid-area: sectionTitulo;
         @include flexbox (column, wrap, center, center);
-            .h1Index{
+            .h1Index404{
                 font-size: $h1;
                 font-weight: 900;
                 color: $negro;
                 text-align: center;  
             }
-            .h2Index{
+            .h2Index404{
                 font-size: 5rem;
                 font-weight: 700;
                 color: $c-secundario;
@@ -21,26 +21,26 @@
                 animation: fadeInOutWithRotation 3s ease-in-out infinite;
             }
 
-            .pIndex{
+            .pIndex404{
                 font-size: $p;
                 color: $negro;
                 text-align: center;
                 margin: 0;
             }
-            .aIndex{
+            .aIndex404{
                 font-size: $p;
                 width: 250px;
-                .btnContactarme {
+                .btnContactarme404 {
                     @extend .btn;
                     background-color: $negro;
                     color: $blanco;
                 }
             }
         }
-    .divFotoPerfil{
+    .divFotoPerfil404{
         grid-area: divFotoPerfil;
         @include flexbox (column, wrap, center, center);
-            .imgPortada {
+            .imgPortada404 {
                 margin-top: 20px;
                 max-width: 100%;
                 width: 100%;
@@ -50,22 +50,22 @@
 
 
 @include responsive (480px,991px) {
-    .mainIndex {
+    .mainIndex404 {
         @include grid (1fr,2fr,20px);
         grid-template-areas: 
         "sectionTitulo" 
         "divFotoPerfil";
-        .sectionTitulo{
+        .sectionTitulo404{
             grid-area: sectionTitulo;
             @include flexbox (column, wrap, center, center);
-            .h1Index {
+            .h1Index404 {
                 margin-top: 5%;
             }
             }
-        .divFotoPerfil{
+        .divFotoPerfil404{
             grid-area: divFotoPerfil;
             @include flexbox (column, wrap, center, center);
-                .imgPortada {
+                .imgPortada404 {
                     margin-top: 20px;
                     max-width: 100%;
                     width: 100%;
@@ -75,22 +75,22 @@
 }
 
 @include responsive (1px,480px) {
-    .mainIndex {
+    .mainIndex404 {
         @include grid (1fr,2fr,20px);
         grid-template-areas: 
         "sectionTitulo" 
         "divFotoPerfil";
-        .sectionTitulo{
+        .sectionTitulo404{
             grid-area: sectionTitulo;
             @include flexbox (column, wrap, center, center);
-            .h1Index {
+            .h1Index404 {
                 margin-top: 5%;
             }
             }
-        .divFotoPerfil{
+        .divFotoPerfil404{
             grid-area: divFotoPerfil;
             @include flexbox (column, wrap, center, center);
-                .imgPortada {
+                .imgPortada404 {
                     margin-top: 20px;
                     max-width: 100%;
                     width: 100%;
