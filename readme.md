@@ -20,7 +20,7 @@ Link de Repositorio Github: https://github.com/br1rossetti/pf-bruno-rossetti
 
 Link de Github Pages: https://br1rossetti.github.io/pf-bruno-rossetti/
 
-Link de Infinity Free:
+Link de Infinity Free: http://brunorossettiuxui.infinityfreeapp.com/
 
 Link 404 Infinity Free:
 
