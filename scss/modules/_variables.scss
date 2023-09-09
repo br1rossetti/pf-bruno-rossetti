@@ -29,3 +29,18 @@ $negro: #111112;
         transform: translateX(0);
     }
 }
+
+@keyframes fadeInOutWithRotation {
+    0% {
+        opacity: 0;
+        transform: rotate(-10deg);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(10deg);
+    }
+}
