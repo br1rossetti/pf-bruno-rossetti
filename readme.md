@@ -22,5 +22,5 @@ Link de Github Pages: https://br1rossetti.github.io/pf-bruno-rossetti/
 
 Link de Infinity Free: http://brunorossettiuxui.infinityfreeapp.com/
 
-Link 404 Infinity Free:
+Link 404 Infinity Free: http://brunorossettiuxui.infinityfreeapp.com/pages/404.html
 
